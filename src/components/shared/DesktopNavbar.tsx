@@ -51,47 +51,8 @@ const DesktopNavbar = () => {
         </Link>
       </div>
       <ul className='desktop-menu-items' id='primary'>
-        {navbarData.map(({ id, menuTitle, path, menuItems }) => {
-          let isActive = menuItems?.some(
-            (path) => pathName == path.menuItemPath
-          );
-          return menuItems ? (
-            <li
-              key={`${id}`}
-              className={` position-relative menu-item-with-dropdown`}
-            >
-              <p
-                className={`d-flex gap-1 align-items-center justify-content-between navbar-hover-text ${
-                  isActive && 'text-secondary'
-                }`}
-              >
-                {' '}
-                <span
-                  className={` textL font-medium  ${
-                    isActive ? 'text-secondary' : 'menu-item-text-white'
-                  }`}
-                >
-                  {menuTitle}
-                </span>
-                <IconChevronDown stroke='3' className={`menu-arrow-icon`} />
-              </p>
-
-              <ul className='list-unstyled main-menu-dropdown'>
-                {menuItems.map(({ id, title, menuItemPath }) => (
-                  <li key={id} className={``}>
-                    <Link
-                      href={`${menuItemPath}`}
-                      className={`textL desktop-menu-item desktop-menu-dropdown-item menu-item-text-white  ${
-                        pathName === menuItemPath && 'menu-active'
-                      }`}
-                    >
-                      {title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ) : (
+        {navbarData.map(({ id, menuTitle, path }) => {
+          return (
             <li key={id} className={`menu-item `}>
               <Link
                 href={`${path}`}
