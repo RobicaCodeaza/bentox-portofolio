@@ -1,4 +1,4 @@
-import EllipseShapeLandingtwoBottomRight from '@/components/pages/landing-two/EllipseShapeLandingtwoBottomRight';
+import EllipseShapeLandingtwoBottomRight from '@/components/pages/landing-two/EllipseShapeLandingTwoBottomRight';
 import EllipseShapeLandingTwoTopLeft from '@/components/pages/landing-two/EllipseShapeLandingTwoTopLeft';
 // import Footer from '@/components/pages/landing-one/Footer';
 import LandingTwoBody from '@/components/pages/landing-two/LandingTwoBody';

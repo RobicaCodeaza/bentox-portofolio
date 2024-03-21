@@ -47,15 +47,7 @@ const DesktopNavbar = () => {
     <div className='desktop-navbar-container'>
       <div>
         <Link href={`/`} className='logo-main'>
-          <PlanetOutline
-            color={'#5a279f'}
-            rotate
-            height='32px'
-            width='32px'
-            onHover={() => {
-              color: '#0000';
-            }}
-          />
+          <PlanetOutline color={'#e8d3c6'} rotate height='32px' width='32px' />
         </Link>
       </div>
       <ul className='desktop-menu-items' id='primary'>

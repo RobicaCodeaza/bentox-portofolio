@@ -5,7 +5,7 @@
   border-radius: 590px;
   opacity: 0.15;
   background: var(--secondary-color);
-  background: #ff8000;
+  background: #f4f2e2;
   filter: blur(200px);
   position: absolute;
 
@@ -31,13 +31,13 @@
   height: 906px;
   border-radius: 906px;
   opacity: 0.25;
-  background: #5a279f;
+  background: #001489;
   filter: blur(225px);
   position: absolute;
   // left: -500px;
   // top: -500px;
-  right: -250px;
-  bottom: -250px;
+  right: 0px;
+  bottom: 0px;
   z-index: 0;
   @media (max-width: 768px) {
     width: 400px;
@@ -68,7 +68,7 @@
   transition: border 0.5s, background 0.5s;
 
   &:hover {
-    border: 1px solid #ff8000;
+    border: 1px solid #a29ab4;
     background: linear-gradient(
       153deg,
       rgba(37, 60, 57, 0.95) -65.62%,
@@ -109,6 +109,7 @@
       transition: all 0.3s ease-in-out;
       &:hover {
         stroke: var(--secondary-color);
+        stroke: #17278f;
       }
 
       @media (max-width: 1400px) {
@@ -236,15 +237,31 @@
         }
       }
       &__button {
-        padding: 12px 24px;
+        padding: 6px 12px;
         border-radius: 8px;
         font-weight: 500;
         line-height: 150%;
-        color: var(--white-neutral1);
-        background: var(--secondary-color);
+        color: #f4f2e2;
         margin-top: 3px;
+        font-size: 1.2rem;
         @media (max-width: 992px) {
           margin: 5px auto;
+        }
+        background-image: linear-gradient(
+          to right,
+          #000a45 0%,
+          #3343a1 51%,
+          #161f53 100%
+        );
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        box-shadow: 0 0 5px #f4f2e2;
+        display: block;
+
+        &:hover {
+          background-position: right center; /* change the direction of the change here */
+          text-decoration: none;
         }
       }
 

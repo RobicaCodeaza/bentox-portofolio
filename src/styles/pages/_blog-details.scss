@@ -515,6 +515,7 @@
 
 .kewta-btn {
   transition: all 0.4s;
+  fill: #17278f;
 }
 .kewta-btn .kew-arrow {
   position: relative;
@@ -549,11 +550,11 @@
 .kew-text {
   font-size: 16px;
   font-weight: 500;
-  color: var(--accent4);
+  color: #394081;
   padding: 12px 24px;
   display: block;
   border-radius: 100px;
-  background: #ff8000;
+  background: #e8d3c6;
   text-align: center;
   transition: all 0.4s;
 }
@@ -566,8 +567,8 @@
   justify-content: center;
   border-radius: 50%;
   border-radius: 50%;
-  background: #ff8000;
-
+  background: #e8d3c6;
+  color: #17278f;
   transition: all 0.4s;
 }
 

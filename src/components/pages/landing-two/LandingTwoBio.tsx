@@ -1,6 +1,6 @@
 'use client';
 import profileImage from '@/../public/image/landing-bio-image.png';
-import profileShape from '@/../public/image/landing-two-profile-shapepng.png';
+// import profileShape from '@/../public/image/landing-two-profile-shapepng.png';
 import LinkPrimaryTwo from '@/components/shared/LinkPrimaryTwo';
 import { motion } from 'framer-motion';
 import { Send2 } from 'iconsax-react';
@@ -24,20 +24,17 @@ const LandingTwoBio = () => {
           alt='Profile Bio'
           className='biography-style__bio-image'
         />
-        <Image
+        {/* <Image
           src={profileShape}
           width={272}
           height={272}
           alt='Profile shape'
           className='biography-style__bio-shape '
-        />
+        /> */}
       </div>
 
       <div className='biography-style__button-text'>
-        <Link
-          href={`/about-us-two`}
-          className={`biography-style__button textXL`}
-        >
+        <Link href={`/about-us`} className={`biography-style__button textXL`}>
           I’m Stoica Robert
         </Link>
         <p className='biography-style__text textL'>
