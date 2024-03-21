@@ -92,59 +92,8 @@ const MobileNavbar = ({
       >
         <div className='sidebar-menu-container'>
           <ul className='mobile-sidebar-menus'>
-            {navbarData.map(({ id, menuTitle, path, menuItems, icon }) => {
-              let isActive = menuItems?.some(
-                (path) => pathName == path.menuItemPath
-              );
-              return menuItems ? (
-                <li
-                  key={`${id}`}
-                  className={` position-relative  ${
-                    isActive && 'text-secondary'
-                  }`}
-                >
-                  <p
-                    onClick={() => handleDropDown(id)}
-                    className='d-flex align-items-center mobile-menu-item justify-content-between mobile-single-menu'
-                  >
-                    {' '}
-                    <span className=' mobile-menu-link'>
-                      {icon} <span className='textXL'>{menuTitle}</span>{' '}
-                    </span>
-                    <ArrowDown2
-                      className={`${
-                        dropDown === id ? 'icon-rotate' : 'icon-normal'
-                      }`}
-                    />
-                  </p>
-                  <AnimateHeight
-                    duration={500}
-                    height={dropDown === id ? 'auto' : 0}
-                    aria-label={`example-panel-${menuTitle}`}
-                  >
-                    <ul className='list-unstyled mobile-sidebar-menu-modal'>
-                      {menuItems.map(({ id, title, menuItemPath }) => (
-                        <li key={id} className={`sub-item `}>
-                          <Link
-                            onClick={() => setSidebarToggle(false)}
-                            href={`${menuItemPath}`}
-                            className='d-flex align-items-center justify-content-between mobile-single-menu '
-                          >
-                            {' '}
-                            <span
-                              className={`textM mobile-menu-link ${
-                                pathName === menuItemPath && 'text-secondary'
-                              }`}
-                            >
-                              {title}
-                            </span>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </AnimateHeight>
-                </li>
-              ) : (
+            {navbarData.map(({ id, menuTitle, path, icon }) => {
+              return (
                 <li
                   key={id}
                   className={`mobile-menu-item  ${

@@ -1,4 +1,4 @@
-import EllipseShapeLandingtwoBottomRight from '@/components/pages/landing-two/EllipseShapeLandingTwoBottomRight';
+import EllipseShapeLandingTwoBottomRight from '@/components/pages/landing-two/EllipseShapeLandingTwoBottomRight';
 import EllipseShapeLandingTwoTopLeft from '@/components/pages/landing-two/EllipseShapeLandingTwoTopLeft';
 // import Footer from '@/components/pages/landing-one/Footer';
 import LandingTwoBody from '@/components/pages/landing-two/LandingTwoBody';
@@ -15,7 +15,7 @@ const page = () => {
   return (
     <div className='position-relative overflow-hidden height-vh'>
       <EllipseShapeLandingTwoTopLeft />
-      <EllipseShapeLandingtwoBottomRight />
+      <EllipseShapeLandingTwoBottomRight />
       <div className='position-relative height-vh exact-position'>
         <Navbar />
         <div className='container'>
