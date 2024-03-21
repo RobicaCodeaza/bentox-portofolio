@@ -1,0 +1,39 @@
+/*---------------------------------------
+    Template Name:  BentoX - Grid System Unique Portfolio NextJs Template
+    Description:    Grid System Unique Portfolio NextJs Template
+    Author Name:    Pixelaxis
+    Author URI:     https://themeforest.net/user/pixelaxis/portfolio
+    Theme URI:      https://portfolio-delta-three-51.vercel.app/
+    Version:        1.0
+-----------------------------------------
+    Table of contents
+-----------------------------------------
+    Color variables    
+    Typography Style
+    Pages Style
+---------------------------------------*/
+
+@import "bootstrap-custom.scss";
+@import "variables";
+@import "typography";
+@import "common";
+@import "snowfall";
+@import "pages/landing";
+@import "pages/landing-two";
+@import "pages/about-us";
+@import "pages/all-projects";
+@import "pages/project-details";
+@import "pages/blog";
+@import "pages/blog-details";
+@import "pages/service";
+@import "pages/contact";
+@import "pages/not-found";
+@import "loader";
+@import "them";
+@import "dashboard/sidebarTopBarFooter";
+@import "dashboard/personal-info";
+@import "dashboard/skills-tools";
+@import "dashboard/experiences";
+@import "dashboard/all-blog";
+@import "dashboard/new-blog";
+@import "navbar";

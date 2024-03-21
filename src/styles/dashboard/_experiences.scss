@@ -1,0 +1,12 @@
+.description-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 400px;
+  white-space: nowrap;
+}
+
+.table-responsive {
+  &::-webkit-scrollbar {
+    height: 3px;
+  }
+}

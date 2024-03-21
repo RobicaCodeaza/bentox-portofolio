@@ -1,0 +1,43 @@
+// color variables
+
+:root {
+  --primary-color: #ff6900;
+  --secondary-color: #9747ff;
+  --accent1: #fff;
+  --accent2: #e6e6e6;
+  --accent3: #ffce32;
+  --accent4: #ffefd7;
+  --accent5: rgb(205, 255, 0);
+  --white: #ffffff;
+
+  --white-neutral1: #0a090d;
+  --white-neutral2: #2b2b2b;
+  --white-neutral3: #222426;
+  --white-neutral4: #1a1a1a;
+
+  --black-neutral1: #ffffff;
+  --black-neutral2: #f2f6f6;
+  --black-neutral3: #b3b6b9;
+  --black-neutral4: #f8f8f8;
+}
+
+[data-theme='dark'] {
+  --primary-color: #ff6900;
+  --secondary-color: #9747ff;
+  --accent1: #1d1d1d;
+  --accent2: #323232;
+  --accent3: #ffce32;
+  --accent4: #ffefd7;
+  --accent5: #cdff00;
+  --white: #ffffff;
+
+  --black-neutral1: #0a090d;
+  --black-neutral2: #2b2b2b;
+  --black-neutral3: #222426;
+  --black-neutral4: #1a1a1a;
+
+  --white-neutral1: #ffffff;
+  --white-neutral2: #f2f6f6;
+  --white-neutral3: #b3b6b9;
+  --white-neutral4: #f8f8f8;
+}

@@ -1,0 +1,16 @@
+.service-table-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.catitem-box input {
+  background: var(--black-neutral3) !important;
+  padding: 10px 14px;
+  border: unset;
+  outline: none;
+}
+
+[data-theme="light"] .catitem-box input {
+  background: #fff !important;
+  border: 1px solid #aeabab6b;
+}

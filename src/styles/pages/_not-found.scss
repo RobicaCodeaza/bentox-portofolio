@@ -1,0 +1,42 @@
+.not-found-page {
+  padding-top: 152px;
+
+  @media (max-width: 1400px) {
+    padding-top: 120px;
+  }
+
+  @media (max-width: 922px) {
+    padding-top: 100px;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 80px;
+  }
+
+  .not-found-image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .not-found-text {
+    padding-top: 20px;
+  }
+
+  .back-to-home {
+    padding: 12px 32px;
+    border-radius: 8px;
+    background: var(--secondary-color);
+    color: var(--white-neutral1);
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+
+    @media (max-width: 992px) {
+      padding: 8px 24px;
+    }
+  }
+}
+
+[data-theme="light"] .back-to-home {
+  color: #fff;
+}

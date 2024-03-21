@@ -1,0 +1,250 @@
+.service-card {
+  border-radius: 20px;
+  border: 1px solid var(--black-neutral3);
+  background: rgba(34, 36, 38, 0.4);
+  padding: 60px;
+
+  @media (max-width: 1400px) {
+    padding: 40px;
+  }
+  @media (max-width: 992px) {
+    padding: 36px;
+  }
+  @media (max-width: 768px) {
+    padding: 32px;
+  }
+  @media (max-width: 576px) {
+    padding: 24px;
+  }
+}
+
+[data-theme='light'] .service-card {
+  border: 1px solid rgba(179, 182, 185, 0.2);
+  background: #fff !important;
+  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border-color: var(--secondary-color);
+  }
+}
+
+.service-bottom-right {
+  border-radius: 900px;
+  width: 906px;
+  height: 906px;
+  opacity: 0.25;
+  background: var(--secondary-color);
+  filter: blur(200px);
+  position: absolute;
+  right: 0px;
+  bottom: -200px;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: 400px;
+    height: 400px;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  @media (max-width: 576px) {
+    width: 300px;
+    height: 300px;
+    right: 0px;
+    bottom: 0px;
+  }
+}
+
+.card-text-color {
+  color: var(--white-neutral1);
+  opacity: 0.8;
+}
+
+.service-body {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 24px;
+
+  @media (max-width: 1200px) {
+    gap: 16px;
+  }
+
+  .card-title {
+    display: flex;
+    flex-direction: column;
+    .title-bottom {
+      padding-left: 40px;
+    }
+  }
+
+  &__design {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    position: relative;
+
+    @media (max-width: 992px) {
+      grid-column-start: 1;
+      grid-column-end: 13;
+    }
+  }
+
+  &__marketing {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    position: relative;
+
+    @media (max-width: 992px) {
+      grid-column-start: 1;
+      grid-column-end: 13;
+    }
+  }
+
+  &__brand-identity {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    position: relative;
+
+    @media (max-width: 992px) {
+      grid-column-start: 1;
+      grid-column-end: 13;
+    }
+  }
+
+  &__web-development {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    position: relative;
+
+    @media (max-width: 992px) {
+      grid-column-start: 1;
+      grid-column-end: 13;
+    }
+  }
+}
+
+[dir='ltr'] .shape-image-developer {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+
+  @media (max-width: 992px) {
+    top: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+[dir='rtl'] .shape-image-developer {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+
+  @media (max-width: 992px) {
+    top: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+[dir='ltr'] .shape-image-brand {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+
+  @media (max-width: 992px) {
+    top: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+[dir='rtl'] .shape-image-brand {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  transform: rotate(-90deg);
+  @media (max-width: 992px) {
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+[dir='ltr'] .shape-image-marketing {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  @media (max-width: 992px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+[dir='rtl'] .shape-image-marketing {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(-90deg);
+  @media (max-width: 992px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+[dir='ltr'] .shape-image-service {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+
+  @media (max-width: 992px) {
+    top: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+[dir='rtl'] .shape-image-service {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  transform: rotate(-90deg);
+  @media (max-width: 992px) {
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.service-bottom {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+
+  @media (max-width: 1200px) {
+    gap: 16px;
+    margin-top: 16px;
+  }
+}
+
+[data-theme='light'] .service-body__marketing {
+  background: rgba(26, 26, 26, 0.03);
+}
+
+[data-theme='light'] .service-body__design {
+  background: rgba(26, 26, 26, 0.03);
+}
+[data-theme='light'] .service-body__web-development {
+  background: rgba(26, 26, 26, 0.03);
+}
+[data-theme='light'] .service-body__brand-identity {
+  background: rgba(26, 26, 26, 0.03);
+}

@@ -1,0 +1,51 @@
+.theme-modal-button {
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  background-color: #24202f;
+  border-radius: 10px 0 0 10px;
+  z-index: 4;
+
+  button {
+    background: transparent;
+    padding: 5px;
+  }
+  .setting-icon {
+    background-color: transparent !important;
+  }
+}
+
+.theme-modal {
+  position: fixed;
+  right: -350px;
+  top: 57%;
+  background-color: #24202f;
+  border-radius: 10px 0 0 10px;
+  width: 100px;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.7s ease-in-out;
+  z-index: 4;
+
+  &__theme-dir {
+    padding: 8px 12px;
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 2px solid var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+    height: fit-content;
+
+    &:hover {
+      background: var(--secondary-color);
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.modal-open {
+  right: 0;
+}

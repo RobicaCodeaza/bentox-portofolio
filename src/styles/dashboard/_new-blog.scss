@@ -1,0 +1,135 @@
+.bt-dashicon {
+  border-top: 1px solid var(--black-neutral2);
+}
+
+.img-cheng {
+  background: var(--black-neutral3);
+  padding: 10px 14px;
+  border: unset;
+  outline: none;
+  color: var(--n3);
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 40px 12px;
+  position: relative;
+}
+
+[data-theme="light"] .img-cheng {
+  border: 1px solid rgba(179, 182, 185, 0.5);
+  background: #efecec;
+}
+
+.img-cheng .custom-file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.f-change-inthis {
+  position: relative;
+  height: 48px;
+  background: var(--black-neutral3);
+  padding: 10px 14px;
+  color: var(--n3);
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+[data-theme="light"] .f-change-inthis {
+  border: 1px solid rgba(179, 182, 185, 0.5);
+  background: #efecec;
+}
+
+.f-change-inthis input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: unset !important;
+  outline: none !important;
+  opacity: 0;
+}
+
+.new-blog-dropdown-container {
+  width: 100% !important;
+  border-radius: 6px;
+  background: var(--black-neutral3);
+
+  .dropdown-btn {
+    border-radius: 12px;
+    width: 100% !important;
+    justify-content: space-between;
+    padding: 9px 14px !important;
+  }
+}
+
+[data-theme="light"] .new-blog-dropdown-container {
+  border: 1px solid rgba(179, 182, 185, 0.5);
+  background: #efecec;
+}
+
+/* editor custom style start*/
+
+.quill-editor {
+  background: var(--black-neutral3);
+  border-radius: 12px;
+}
+
+[data-theme="light"] .quill-editor {
+  border: 1px solid rgba(179, 182, 185, 0.5);
+  background: #efecec;
+}
+
+.quill-editor .ql-container {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  border: unset !important;
+}
+
+/* Snow Theme */
+.quill-editor .ql-snow.ql-toolbar {
+  display: block;
+  background: inherit;
+  border: unset !important;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+/* Bubble Theme */
+.quill-editor .ql-bubble .ql-editor {
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+}
+
+.quill-editor .ql-editor {
+  min-height: 18em;
+}
+
+.ql-editor.ql-blank::before {
+  font-style: normal !important;
+  font-size: 14px !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+
+.ql-snow .ql-stroke {
+  stroke: var(--white-neutral3) !important;
+}
+
+.ql-snow .ql-fill,
+.ql-snow .ql-stroke.ql-fill {
+  fill: var(--white-neutral3) !important;
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item::before,
+.ql-snow .ql-picker.ql-size .ql-picker-label::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item::before {
+  color: var(--white-neutral3) !important;
+}
+
+/* editor custom style start end*/

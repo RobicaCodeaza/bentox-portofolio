@@ -1,0 +1,165 @@
+body {
+  background-color: var(--black-neutral1);
+  margin: 0;
+  margin: 0;
+  color: var(--white-neutral1);
+  font-family: var(--body-font) !important;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.display-4 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 120%;
+
+  @media (max-width: 1400px) {
+    font-size: 40px;
+  }
+  @media (max-width: 992px) {
+    font-size: 32px;
+  }
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+.heading-1 {
+  font-size: 48px;
+  font-weight: 700;
+  @media (max-width: 1400px) {
+    font-size: 38px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 32px;
+  }
+  @media (max-width: 992px) {
+    font-size: 28px;
+  }
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
+}
+
+.heading-2 {
+  font-size: 40px;
+  font-weight: 600;
+  @media (max-width: 1400px) {
+    font-size: 32px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 28px;
+  }
+  @media (max-width: 992px) {
+    font-size: 26px;
+  }
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.heading-3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 120%;
+  @media (max-width: 1400px) {
+    font-size: 28px;
+  }
+  @media (max-width: 992px) {
+    font-size: 24px;
+  }
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.heading-4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+  @media (max-width: 1400px) {
+    font-size: 20px;
+  }
+  @media (max-width: 992px) {
+    font-size: 18px;
+  }
+}
+
+.heading-5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  @media (max-width: 1400px) {
+    font-size: 18px;
+  }
+}
+
+.textLead {
+  font-size: 24px;
+  line-height: 150%;
+  @media (max-width: 1400px) {
+    font-size: 20px;
+  }
+}
+.textXL {
+  font-size: 20px;
+  line-height: 150%;
+  @media (max-width: 1400px) {
+    font-size: 18px;
+  }
+}
+
+.textL {
+  font-size: 18px;
+  line-height: 150%;
+  @media (max-width: 1400px) {
+    font-size: 16px;
+  }
+}
+
+.textM {
+  font-size: 16px;
+  line-height: 150%;
+  @media (max-width: 1400px) {
+    font-size: 14px;
+  }
+}
+
+.textS {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+.font-semi-bold {
+  font-weight: 600;
+}
+.font-medium {
+  font-weight: 500;
+}
+
+.font-thin {
+  font-weight: 300;
+}
