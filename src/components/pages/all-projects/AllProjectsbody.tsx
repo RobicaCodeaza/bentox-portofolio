@@ -21,13 +21,14 @@ const AllProjectBody = () => {
               image={image11}
               width={636}
               hight={425}
-              // objectPosition='right'
+              objectPosition=''
               projectNumber={1}
             />
             <AllProjectImage
               image={image12}
               width={636}
               hight={330}
+              objectPosition=''
               projectNumber={2}
             />
           </div>
@@ -36,6 +37,7 @@ const AllProjectBody = () => {
               image={image13}
               width={636}
               hight={780}
+              objectPosition=''
               projectNumber={3}
             />
           </div>
@@ -45,6 +47,7 @@ const AllProjectBody = () => {
             image={image21}
             width={1296}
             hight={400}
+            objectPosition=''
             projectNumber={4}
           />
         </div>
@@ -54,6 +57,7 @@ const AllProjectBody = () => {
               image={image31}
               width={636}
               hight={393}
+              objectPosition=''
               projectNumber={5}
             />
           </div>
@@ -62,6 +66,7 @@ const AllProjectBody = () => {
               image={image32}
               width={636}
               hight={393}
+              objectPosition=''
               projectNumber={6}
             />
           </div>
