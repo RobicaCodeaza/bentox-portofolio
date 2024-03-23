@@ -2,7 +2,7 @@
 // import image11 from '@/../public/image/all-project-11.png';
 import image11 from '@/../public/image/all-project-1.png';
 // import image12 from '@/../public/image/all-project-12.png';
-import image12 from '@/../public/image/Mockup copy.png';
+import image12 from '@/../public/image/all-project-2.png';
 import image13 from '@/../public/image/all-project-3.png';
 import image21 from '@/../public/image/all-project-21.png';
 import image31 from '@/../public/image/all-project-31.png';
@@ -20,14 +20,14 @@ const AllProjectBody = () => {
             <AllProjectImage
               image={image11}
               width={636}
-              hight={350}
+              hight={425}
               // objectPosition='right'
               projectNumber={1}
             />
             <AllProjectImage
               image={image12}
               width={636}
-              hight={320}
+              hight={330}
               projectNumber={2}
             />
           </div>
@@ -35,7 +35,7 @@ const AllProjectBody = () => {
             <AllProjectImage
               image={image13}
               width={636}
-              hight={690}
+              hight={780}
               projectNumber={3}
             />
           </div>

@@ -12,6 +12,7 @@ type Props = {
   title?: string;
   text?: string;
   projectNumber?: number;
+  objectPosition: string;
 };
 
 const AllProjectImage = ({
