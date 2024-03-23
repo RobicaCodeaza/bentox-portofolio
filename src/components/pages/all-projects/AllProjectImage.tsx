@@ -24,12 +24,6 @@ const AllProjectImage = ({
   projectNumber,
   objectPosition,
 }: Props) => {
-  const [searchParams, setSearchParams] = useSearchParams();
-  function handleClick() {
-    searchParams.set('project', projectNumber);
-    setSearchParams(searchParams);
-  }
-
   return (
     <motion.div
       initial={{ borderRadius: 20, opacity: 0, y: -50, scale: 0.5 }}
