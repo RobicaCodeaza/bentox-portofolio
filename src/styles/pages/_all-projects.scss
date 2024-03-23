@@ -36,8 +36,11 @@
       padding: 24px;
     }
 
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
       padding: 16px;
+      opacity: 1;
+      height: 100%;
+      visibility: visible;
     }
 
     &__text-area {
@@ -45,7 +48,7 @@
       flex-direction: column;
       gap: 12px;
 
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
         gap: 4px;
       }
 
@@ -67,7 +70,7 @@
         &:hover {
           transform: rotate(-10deg);
         }
-        @media (max-width: 992px) {
+        @media (max-width: 991px) {
           display: none;
         }
       }
@@ -94,13 +97,14 @@
   @media (max-width: 1200px) {
     gap: 18px;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     gap: 16px;
   }
   .all-project__1st-row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 24px;
+    justify-items: center;
 
     @media (max-width: 1400px) {
       gap: 20px;
@@ -109,7 +113,7 @@
     @media (max-width: 1200px) {
       gap: 18px;
     }
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
       gap: 16px;
     }
 
@@ -126,9 +130,13 @@
       }
 
       @media (max-width: 1200px) {
+        // grid-column-start: 1;
+        // grid-column-end: 13;
         gap: 18px;
       }
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
+        grid-column-start: 1;
+        grid-column-end: 13;
         gap: 16px;
       }
 
@@ -142,6 +150,12 @@
       grid-column-start: 7;
       grid-column-end: 13;
 
+      @media (max-width: 991px) {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        // gap: 18px;
+      }
+
       @media (max-width: 768px) {
         grid-column-start: 1;
         grid-column-end: 13;
@@ -153,6 +167,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 24px;
+    justify-items: center;
 
     @media (max-width: 1400px) {
       gap: 20px;
@@ -161,14 +176,14 @@
     @media (max-width: 1200px) {
       gap: 18px;
     }
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
       gap: 16px;
     }
 
     &-1st-column {
       grid-column-start: 1;
       grid-column-end: 7;
-      @media (max-width: 768px) {
+      @media (max-width: 991px) {
         grid-column-start: 1;
         grid-column-end: 13;
       }
@@ -177,7 +192,7 @@
     &-2nd-column {
       grid-column-start: 7;
       grid-column-end: 13;
-      @media (max-width: 768px) {
+      @media (max-width: 991px) {
         grid-column-start: 1;
         grid-column-end: 13;
       }

@@ -3,6 +3,7 @@ import linkImage from '@/../public/image/all-project-link.png';
 import { motion } from 'framer-motion';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 
 type Props = {
   image: StaticImageData;
@@ -10,9 +11,24 @@ type Props = {
   hight: number;
   title?: string;
   text?: string;
+  projectNumber?: number;
 };
 
-const AllProjectImage = ({ image, hight, width, title, text }: Props) => {
+const AllProjectImage = ({
+  image,
+  hight,
+  width,
+  title,
+  text,
+  projectNumber,
+  objectPosition,
+}: Props) => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  function handleClick() {
+    searchParams.set('project', projectNumber);
+    setSearchParams(searchParams);
+  }
+
   return (
     <motion.div
       initial={{ borderRadius: 20, opacity: 0, y: -50, scale: 0.5 }}
@@ -23,12 +39,21 @@ const AllProjectImage = ({ image, hight, width, title, text }: Props) => {
     >
       <Image
         src={image}
-        width={width}
-        height={hight}
+        style={{
+          objectFit: 'cover',
+          objectPosition: objectPosition || 'center',
+          display: 'block',
+          height: `${hight}px`,
+          width: `${width}px`,
+        }}
         alt='All Projects image 11'
         className='image-body__image img-fluid'
       />
-      <Link href={`/project-details`} className='all-project-link'>
+      <Link
+        href={`/project-details`}
+        className='all-project-link'
+        // onClick={handleClick}
+      >
         <span className='all-project-link__text-area'>
           <span className='link-title heading-2'>Aroha agency website</span>
           <span className='textL link-text'>

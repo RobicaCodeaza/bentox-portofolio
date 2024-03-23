@@ -29,11 +29,11 @@ export const navbarData = [
     menuTitle: 'About',
     path: '/about-us',
   },
-  {
-    id: 'menu2',
-    menuTitle: 'Blog',
-    path: '/blogs',
-  },
+  // {
+  //   id: 'menu2',
+  //   menuTitle: 'Blog',
+  //   path: '/blogs',
+  // },
   {
     id: 'work',
     menuTitle: 'Projects',

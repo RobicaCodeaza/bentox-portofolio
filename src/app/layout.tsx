@@ -8,6 +8,7 @@ import { ToastContainer } from 'react-toastify';
 import 'swiper/css/bundle';
 import 'swiper/css/navigation';
 import '../styles/main.scss';
+// import { ReactQueryDevtools } from '@tanstack/react-query-devtools/build/lib/devtools';
 
 // export const metadata: Metadata = {
 //   title: "BentoX - Grid System Unique Portfolio NextJs Template",

@@ -20,12 +20,12 @@ const navbarData = [
     menuTitle: 'Home',
     path: '/',
   },
-  {
-    id: 'menu2',
-    menuTitle: 'Blog',
-    icon: <Blogger />,
-    path: '/blogs',
-  },
+  // {
+  //   id: 'menu2',
+  //   menuTitle: 'Blog',
+  //   icon: <Blogger />,
+  //   path: '/blogs',
+  // },
   {
     id: 'project',
     menuTitle: 'Projects',

@@ -1,5 +1,5 @@
 'use client';
-import profileImage from '@/../public/image/landing-bio-image.png';
+import profileImage from '@/../public/image/contact-pic.jpg';
 // import profileShape from '@/../public/image/landing-two-profile-shapepng.png';
 import LinkPrimaryTwo from '@/components/shared/LinkPrimaryTwo';
 import { motion } from 'framer-motion';

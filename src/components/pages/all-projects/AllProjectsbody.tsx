@@ -1,11 +1,13 @@
 'use client';
-import image11 from '@/../public/image/Mockup copy.webp';
-import image12 from '@/../public/image/Mockup copy.webp';
-import image13 from '@/../public/image/Mockup copy.webp';
-import image21 from '@/../public/image/Mockup copy.webp';
-import image31 from '@/../public/image/Mockup copy.webp';
-import image32 from '@/../public/image/Mockup copy.webp';
-import image3 from '@/../public/image/project-details-image-3.png';
+// import image11 from '@/../public/image/all-project-11.png';
+import image11 from '@/../public/image/all-project-1.png';
+// import image12 from '@/../public/image/all-project-12.png';
+import image12 from '@/../public/image/Mockup copy.png';
+import image13 from '@/../public/image/all-project-3.png';
+import image21 from '@/../public/image/all-project-21.png';
+import image31 from '@/../public/image/all-project-31.png';
+import image32 from '@/../public/image/all-project-32.png';
+// import image3 from '@/../public/image/project-details-image-3.png';
 
 import AllProjectImage from './AllProjectImage';
 
@@ -15,22 +17,53 @@ const AllProjectBody = () => {
       <div className='all-project-body mb-40-optional'>
         <div className='all-project__1st-row'>
           <div className='all-project__1st-row-1st-column'>
-            <AllProjectImage image={image3} width={636} hight={320} />
-            <AllProjectImage image={image12} width={636} hight={320} />
+            <AllProjectImage
+              image={image11}
+              width={636}
+              hight={350}
+              // objectPosition='right'
+              projectNumber={1}
+            />
+            <AllProjectImage
+              image={image12}
+              width={636}
+              hight={320}
+              projectNumber={2}
+            />
           </div>
           <div className='all-project__1st-row-2nd-column'>
-            <AllProjectImage image={image13} width={636} hight={664} />
+            <AllProjectImage
+              image={image13}
+              width={636}
+              hight={690}
+              projectNumber={3}
+            />
           </div>
         </div>
         <div className='all-project__2nd-row'>
-          <AllProjectImage image={image21} width={1296} hight={400} />
+          <AllProjectImage
+            image={image21}
+            width={1296}
+            hight={400}
+            projectNumber={4}
+          />
         </div>
         <div className='all-project__3rd-row'>
           <div className='all-project__3rd-row-1st-column'>
-            <AllProjectImage image={image31} width={636} hight={393} />
+            <AllProjectImage
+              image={image31}
+              width={636}
+              hight={393}
+              projectNumber={5}
+            />
           </div>
           <div className='all-project__3rd-row-2nd-column'>
-            <AllProjectImage image={image32} width={636} hight={393} />
+            <AllProjectImage
+              image={image32}
+              width={636}
+              hight={393}
+              projectNumber={6}
+            />
           </div>
         </div>
       </div>
