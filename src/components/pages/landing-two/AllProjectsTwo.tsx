@@ -1,5 +1,4 @@
 import allProjectStars from '@/../public/image/all-project-stars.png';
-// import allProjectImage from "@/../public/image/landing-two-all-projects.png";
 import allProjectImage from '@/../public/image/allProjectImage.jpg';
 import LinkPrimaryTwo from '@/components/shared/LinkPrimaryTwo';
 import Image from 'next/image';
