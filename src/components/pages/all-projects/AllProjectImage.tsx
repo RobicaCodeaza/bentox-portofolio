@@ -15,6 +15,27 @@ type Props = {
   objectPosition: string;
 };
 
+const allProjects: any = {
+  project1: {
+    title: 'Nexter Properties',
+    description: 'An inspiring landing page for a real estate agency',
+  },
+  project2: {
+    title: 'Mealsify',
+    description: 'An overall app that provides analytics to your daily meals.',
+  },
+  project3: {
+    title: 'Omnifood',
+    description:
+      'The importance of healthy delivered meals on one landing page.',
+  },
+  project4: {
+    title: 'WellspringLife',
+    description:
+      'An app that serves its purpose in facilitating a good management of current properties(hotel chain).',
+  },
+};
+
 const AllProjectImage = ({
   image,
   hight,
@@ -50,9 +71,11 @@ const AllProjectImage = ({
         // onClick={handleClick}
       >
         <span className='all-project-link__text-area'>
-          <span className='link-title heading-2'>Aroha agency website</span>
+          <span className='link-title heading-2'>
+            {allProjects[`project${projectNumber}`]?.title}
+          </span>
           <span className='textL link-text'>
-            An 12 month long inquiry into italine design,history and culture.
+            {allProjects[`project${projectNumber}`]?.description}
           </span>
         </span>
         <span className='all-project-link__image'>
