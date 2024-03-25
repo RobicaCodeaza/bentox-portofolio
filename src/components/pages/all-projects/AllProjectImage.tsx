@@ -34,6 +34,16 @@ const allProjects: any = {
     description:
       'An app that serves its purpose in facilitating a good management of current properties(hotel chain).',
   },
+  project5: {
+    title: 'Active&Healthy',
+    description:
+      'An app that helps you log your current cardio activities related to different places you visit.',
+  },
+  project6: {
+    title: 'GymRat',
+    description:
+      'A complete app,serves with simplicity, being an all-in-one gym log that helps you track your records and daily needs.',
+  },
 };
 
 const AllProjectImage = ({
