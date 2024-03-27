@@ -18,6 +18,12 @@ import {
   CogOutline,
 } from 'react-ionicons';
 
+interface SliderItem {
+  icon: any; // Assuming IconType is the desired type for icon
+  name: string;
+  // Add other properties if necessary
+}
+
 const ProjectBanner = ({
   sliderTwo,
   bannerImage,
@@ -82,7 +88,7 @@ const ProjectBanner = ({
         </Link>
       </motion.div>
       <span className='skills-card__slider-two mb-5'>
-        {sliderTwo.map(({ icon, name }, index) => (
+        {sliderTwo.map(({ icon, name }: SliderItem, index: number) => (
           <>
             <span
               key={`skill-slider-two${index}`}
