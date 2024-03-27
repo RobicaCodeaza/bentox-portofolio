@@ -713,17 +713,63 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    flex-wrap: wrap;
+    @media (max-width: 992px) {
+      gap: 8px;
+      justify-content: space-around;
+    }
+
+    &__flex {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
     &__box {
       border: 1px solid var(--black-neutral2);
-      padding: 14px;
+      padding: 10px;
       text-align: center;
       border-radius: 8px;
       transition: all 0.3s ease-in-out;
       color: var(--white-neutral3);
       margin: 0 8px;
+      @media (max-width: 992px) {
+        padding: 3.5px 7px;
+      }
+
+      &--active {
+        border: 1px solid var(--white-neutral2);
+        &:hover {
+          background: var(--secondary-color);
+          color: var(--white-neutral1);
+          svg {
+            color: #b3b6b9;
+            fill: var(--white-neutral1) !important;
+            stroke: var(--white-neutral1) !important;
+          }
+        }
+
+        svg {
+          color: #b3b6b9;
+          fill: var(--secondary-color) !important;
+          stroke: var(--secondary-color) !important;
+
+          transition: all 0.3s ease-in-out;
+        }
+      }
+
       &:hover {
         background: var(--secondary-color);
         color: var(--white-neutral1);
+        svg {
+          color: #b3b6b9;
+        }
+      }
+
+      svg {
+        color: #b3b6b9;
+
+        transition: all 0.3s ease-in-out;
       }
 
       [data-theme='light'] svg {

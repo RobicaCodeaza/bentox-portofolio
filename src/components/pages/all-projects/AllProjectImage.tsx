@@ -1,5 +1,6 @@
 'use client';
 import linkImage from '@/../public/image/all-project-link.png';
+import { useProjectContext } from '@/components/shared/ProjectProvider';
 import { motion } from 'framer-motion';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
@@ -17,12 +18,13 @@ type Props = {
 
 const allProjects: any = {
   project1: {
-    title: 'Nexter Properties',
-    description: 'An inspiring landing page for a real estate agency',
+    title: 'RealProperty',
+    description: 'An inspiring landing page for a real estate agency.',
   },
   project2: {
-    title: 'Mealsify',
-    description: 'An overall app that provides analytics to your daily meals.',
+    title: 'DailyMeals',
+    description:
+      'An overall app that provides analytics to your daily meals and activities.',
   },
   project3: {
     title: 'Omnifood',
@@ -52,9 +54,10 @@ const AllProjectImage = ({
   width,
   title,
   text,
-  projectNumber,
+  projectNumber = 0,
   objectPosition,
 }: Props) => {
+  const { setCurrentProject } = useProjectContext();
   return (
     <motion.div
       initial={{ borderRadius: 20, opacity: 0, y: -50, scale: 0.5 }}
@@ -78,7 +81,9 @@ const AllProjectImage = ({
       <Link
         href={`/project-details`}
         className='all-project-link'
-        // onClick={handleClick}
+        onClick={() => {
+          setCurrentProject(projectNumber);
+        }}
       >
         <span className='all-project-link__text-area'>
           <span className='link-title heading-2'>

@@ -1,6 +1,7 @@
 import '@/../../node_modules/react-toastify/dist/ReactToastify.min.css';
 import Bootstrap from '@/components/shared/Bootstrap';
 import NextThemeProvider from '@/components/shared/NextThemeProvider';
+import { ProjectProvider } from '@/components/shared/ProjectProvider';
 import Theme from '@/components/shared/Theme';
 import { kanit } from '@/utils/fonts';
 // import type { Metadata } from "next";
@@ -26,10 +27,12 @@ export default function RootLayout({
         <body
           className={`${kanit.variable} position-relative overflow-x-hidden`}
         >
-          <NextThemeProvider>
-            {children}
-            <Theme />
-          </NextThemeProvider>
+          <ProjectProvider>
+            <NextThemeProvider>
+              {children}
+              <Theme />
+            </NextThemeProvider>
+          </ProjectProvider>
           <ToastContainer />
         </body>
       </Bootstrap>

@@ -10,6 +10,30 @@
   &__banner {
     img {
       border-radius: 24px;
+      display: block;
+      &:hover {
+        background-color: var(--black-neutral2);
+      }
+    }
+    .image-body {
+    }
+    .image-body__image {
+      transition: all 0.2s;
+      border: 3.5px solid var(--black-neutral2);
+    }
+
+    &:hover {
+      .image-body__image {
+        border: 3.5px dotted var(--secondary-color);
+      }
+      .all-project-link__image {
+        img {
+          transform: scale(1.1);
+          &:hover {
+            transform: rotate(-10deg) scale(1.1);
+          }
+        }
+      }
     }
 
     h2 {

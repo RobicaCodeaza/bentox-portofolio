@@ -1,5 +1,6 @@
 import allProjectStars from '@/../public/image/all-project-stars.png';
-import allProjectImage from '@/../public/image/allProjectImage.jpg';
+// import allProjectImage from '@/../public/image/allProjectImage.jpg';
+import allProjectImage from '@/../public/image/workspace.png';
 import LinkPrimaryTwo from '@/components/shared/LinkPrimaryTwo';
 import Image from 'next/image';
 
@@ -14,7 +15,7 @@ const AllProjectsTwo = () => {
         src={allProjectImage}
         width={350}
         height={220}
-        style={{ objectFit: 'cover' }}
+        style={{ objectFit: 'contain' }}
         alt='All Project Image'
         className='all-projects-card-two__image'
       />

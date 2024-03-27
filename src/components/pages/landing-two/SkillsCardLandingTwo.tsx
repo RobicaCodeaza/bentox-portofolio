@@ -5,6 +5,7 @@ import {
   IconBrandVite,
   IconBrandRedux,
 } from '@tabler/icons-react';
+import { SiReactquery } from 'react-icons/si';
 import { Figma, JavaScript, Html5, Designtools } from 'iconsax-react';
 import {
   LogoReact,
@@ -21,7 +22,6 @@ const SkillsCardLandingTwo = [
   'JavaScript',
   'React',
   'Redux',
-  'WebPack',
   'Parcel',
   'Vite',
   'Responsive Design',
@@ -65,6 +65,10 @@ export const sliderTwo = [
   {
     icon: <IconBrandRedux size='32' />,
     name: 'Redux',
+  },
+  {
+    icon: <SiReactquery size='32'></SiReactquery>,
+    name: 'React Query',
   },
   {
     icon: <IconBrandVite size='32' />,
