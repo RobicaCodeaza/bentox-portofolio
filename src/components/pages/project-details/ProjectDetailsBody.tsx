@@ -532,7 +532,9 @@ const ProjectDetailsBody = () => {
           bannerText={
             projectsContent[currentProject]?.banner?.bannerText || 'Text'
           }
-          websiteLink={projectsContent[currentProject]?.banner?.website}
+          websiteLink={
+            projectsContent[currentProject]?.banner?.website || 'Website'
+          }
         />
 
         {projectsContent[currentProject]?.content?.map((el, index) => (
