@@ -3,7 +3,7 @@ import AboutCardProfile from './AboutCardProfile';
 import AboutEducation from './AboutEducation';
 import AboutLetsWorks from './AboutLetsWorks';
 import AboutMyExperience from './AboutMyExperience';
-import AboutWhatIDo from './AboutWhatIDo';
+import AboutWhoAmI from './AboutWhoAmI';
 import ExperienceInNumber from './ExperienceInNumber';
 import HelloCard from './HelloCard';
 import ProfileCardAbout from './ProfileCardAbout';
@@ -18,11 +18,11 @@ const AboutUsBody = ({ image }: { image: StaticImageData }) => {
         </div>
         <div className='about-body__2nd-row'>
           <AboutMyExperience />
-          <AboutWhatIDo />
-          <ExperienceInNumber />
+          <AboutWhoAmI />
+          <ProfileCardAbout />
+          {/* <ExperienceInNumber /> */}
         </div>
         <div className='about-body__3rd-row'>
-          <ProfileCardAbout />
           <AboutEducation />
           <AboutLetsWorks />
         </div>
