@@ -103,8 +103,8 @@
     }
   }
 
-  &__image {
-    svg {
+  svg {
+    &__image {
       stroke: var(--white-neutral1);
       transition: all 0.3s ease-in-out;
       &:hover {
@@ -608,7 +608,7 @@
     }
 
     .get-in-touch {
-      grid-column-start: 4;
+      grid-column-start: 3;
       grid-column-end: 9;
       @media (max-width: 1400px) {
         grid-column-start: 4;
@@ -639,8 +639,8 @@
     }
 
     .blogs {
-      grid-column-start: 7;
-      grid-column-end: 9;
+      grid-column-start: 1;
+      grid-column-end: 3;
 
       position: relative;
       display: flex;

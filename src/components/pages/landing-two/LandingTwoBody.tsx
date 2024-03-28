@@ -69,9 +69,9 @@ const LandingTwoBody = () => {
             </div>
           </div>
           <div className='second-down-section'>
-            <LandingTwoAllService />
+            {/* <LandingTwoAllService /> */}
+            <LandingTwoAllBlogs />
             <LandingTwoGetInTouch />
-            {/* <LandingTwoAllBlogs /> */}
           </div>
         </div>
       </div>

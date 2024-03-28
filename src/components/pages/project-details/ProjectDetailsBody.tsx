@@ -6,7 +6,8 @@ import {
   IconBrandVite,
   IconBrandRedux,
 } from '@tabler/icons-react';
-import { SiReactquery } from 'react-icons/si';
+import { SiReactquery, SiSupabase, SiVite } from 'react-icons/si';
+
 import { JavaScript, Html5, Designtools } from 'iconsax-react';
 import {
   LogoReact,
@@ -301,16 +302,18 @@ const projectsContent = [
           name: 'React Query',
         },
         {
-          icon: <IconBrandVite size='32' />,
+          icon: <SiSupabase size='32'></SiSupabase>,
+          name: 'Supabase',
+        },
+        {
+          icon: (
+            <SiVite size='32' style={{ fill: 'transparent !important;' }} />
+          ),
           name: 'Vite',
         },
         {
           icon: <Designtools size='32' />,
           name: 'Art Direction',
-        },
-        {
-          icon: <CogOutline style={{ width: '32px', height: '32px' }} />,
-          name: 'Optimization',
         },
 
         {

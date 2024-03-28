@@ -1,11 +1,10 @@
 'use client';
 import {
-  IconSeo,
   IconBrandGithub,
   IconBrandVite,
   IconBrandRedux,
 } from '@tabler/icons-react';
-import { SiReactquery } from 'react-icons/si';
+import { SiReactquery, SiTailwindcss, SiSupabase } from 'react-icons/si';
 import { Figma, JavaScript, Html5, Designtools } from 'iconsax-react';
 import {
   LogoReact,
@@ -21,14 +20,15 @@ const SkillsCardLandingTwo = [
   'SCSS',
   'JavaScript',
   'React',
+  'Tailwind',
+  'React Query',
   'Redux',
   'Parcel',
   'Vite',
+  'Supabase',
   'Responsive Design',
-  'Optimization Tools',
+  // 'Optimization Tools',
   'Art Direction and Density Switching',
-  'Continous Integration',
-  'SEO',
 ];
 
 export const sliderTwo = [
@@ -63,12 +63,20 @@ export const sliderTwo = [
     name: 'React',
   },
   {
+    icon: <SiTailwindcss size='32'></SiTailwindcss>,
+    name: 'Tailwind',
+  },
+  {
     icon: <IconBrandRedux size='32' />,
     name: 'Redux',
   },
   {
     icon: <SiReactquery size='32'></SiReactquery>,
     name: 'React Query',
+  },
+  {
+    icon: <SiSupabase size='32'></SiSupabase>,
+    name: 'Supabase',
   },
   {
     icon: <IconBrandVite size='32' />,
@@ -83,12 +91,12 @@ export const sliderTwo = [
     ),
     name: 'Responsive',
   },
-  {
-    icon: (
-      <CogOutline style={{ width: '32px', height: '32px' }} color='#b3b6b9' />
-    ),
-    name: 'Optimization',
-  },
+  // {
+  //   icon: (
+  //     <CogOutline style={{ width: '32px', height: '32px' }} color='#b3b6b9' />
+  //   ),
+  //   name: 'Optimization',
+  // },
   {
     icon: <Designtools size='32' />,
     name: 'Art Direction',
@@ -96,10 +104,6 @@ export const sliderTwo = [
   {
     icon: <IconBrandGithub size='32' />,
     name: 'Github',
-  },
-  {
-    icon: <IconSeo size='32' />,
-    name: 'SEO',
   },
 
   {
@@ -132,9 +136,22 @@ export const sliderTwo = [
     ),
     name: 'React',
   },
+
+  {
+    icon: <SiTailwindcss size='32'></SiTailwindcss>,
+    name: 'Tailwind',
+  },
   {
     icon: <IconBrandRedux size='32' />,
     name: 'Redux',
+  },
+  {
+    icon: <SiReactquery size='32'></SiReactquery>,
+    name: 'React Query',
+  },
+  {
+    icon: <SiSupabase size='32'></SiSupabase>,
+    name: 'Supabase',
   },
   {
     icon: <IconBrandVite size='32' />,
@@ -149,12 +166,12 @@ export const sliderTwo = [
     ),
     name: 'Responsive',
   },
-  {
-    icon: (
-      <CogOutline style={{ width: '32px', height: '32px' }} color='#b3b6b9' />
-    ),
-    name: 'Optimization',
-  },
+  // {
+  //   icon: (
+  //     <CogOutline style={{ width: '32px', height: '32px' }} color='#b3b6b9' />
+  //   ),
+  //   name: 'Optimization',
+  // },
   {
     icon: <Designtools size='32' />,
     name: 'Art Direction',
@@ -162,10 +179,6 @@ export const sliderTwo = [
   {
     icon: <IconBrandGithub size='32' />,
     name: 'Github',
-  },
-  {
-    icon: <IconSeo size='32' />,
-    name: 'SEO',
   },
 ];
 
