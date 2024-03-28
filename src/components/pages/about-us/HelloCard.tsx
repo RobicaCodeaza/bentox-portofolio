@@ -20,10 +20,10 @@ const HelloCard = () => {
       <p className='textL'>
         As a current student of a Master, I love to study and always stride to
         learn new things.Whether it is about Web Development domain or how our
-        body functions, or just simple sports I like to 'split the thread in
-        four like an old man'. Though sometimes it is not a perfect character
-        trait, this is what keeps me interested in this pursuit of everyday
-        improvement.
+        body functions, or just simple sports I like to &apos;split the thread
+        in four like an old man &apos;. Though sometimes it is not a perfect
+        character trait, this is what keeps me interested in this pursuit of
+        everyday improvement.
       </p>
       <Image
         src={image}
