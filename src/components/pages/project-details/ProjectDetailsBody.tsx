@@ -537,7 +537,7 @@ const ProjectDetailsBody = () => {
           }
         />
 
-        {projectsContent[currentProject]?.content?.map((el, index) => (
+        {projectsContent[currentProject]?.content?.map((el: any, index) => (
           <ProjectDetailsItem
             image={el.image}
             listContent={el.listContent}
