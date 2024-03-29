@@ -15,11 +15,21 @@
         background-color: var(--black-neutral2);
       }
     }
-    .image-body {
-    }
+    // .image-body {
+    // }
     .image-body__image {
       transition: all 0.2s;
       border: 3.5px solid var(--black-neutral2);
+
+      @media (max-width: 768px) {
+        // object-fit: contain !important;
+        height: 300px !important;
+        width: 500px !important;
+      }
+      @media (max-width: 576px) {
+        height: 200px !important;
+        width: 350px !important;
+      }
     }
 
     &:hover {
