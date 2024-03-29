@@ -38,7 +38,8 @@ const LandingTwoBio = () => {
           I’m Stoica Robert
         </Link>
         <p className='biography-style__text textL'>
-          A Passionate Designer and Creative Thinker
+          A Passionate of Tech, Reading old books and always looking for
+          Creative Problem Solutions
         </p>
       </div>
       <LinkPrimaryTwo

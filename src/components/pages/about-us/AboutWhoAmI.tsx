@@ -14,7 +14,7 @@ const AboutWhoAmI = () => {
       transition={{ duration: 0.9 }}
       className='about-card what-i-do p-32px'
     >
-      <p className='heading-4'>What am I?</p>
+      <p className='heading-4'>Who am I?</p>
       <div className='what-i-do__content'>
         <div className='what-i-do__content-item'>
           <IconArrowBadgeRight /> <p className='textL'>Competitive</p>

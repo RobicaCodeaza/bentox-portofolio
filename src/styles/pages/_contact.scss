@@ -78,6 +78,9 @@
           &:hover {
             border-color: var(--secondary-color) !important;
           }
+          @media (max-width: 576px) {
+            padding: 12px;
+          }
         }
 
         &-info {
@@ -91,11 +94,11 @@
   }
 
   &__right {
-    grid-column-start: 4;
+    grid-column-start: 5;
     grid-column-end: 13;
 
     @media (max-width: 1400px) {
-      grid-column-start: 5;
+      grid-column-start: 6;
       grid-column-end: 13;
     }
 
@@ -149,7 +152,8 @@
 // social icon section
 .social-icon-section {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+
   gap: 24px;
 
   @media (max-width: 1400px) {
@@ -175,7 +179,12 @@
       padding: 12px;
       border-radius: 100px;
       border: 1px solid var(--secondary-color);
-      color: var(--secondary-color);
+
+      svg {
+        stroke: var(--secondary-color);
+        fill: var(--secondary-color);
+      }
+
       transition: all 0.3s ease-in-out;
     }
 
@@ -187,8 +196,11 @@
       background: var(--secondary-color);
 
       .icon {
-        color: var(--white-neutral1);
         border-color: var(--white-neutral1);
+        svg {
+          fill: var(--white-neutral1);
+          color: var(--secondary-color);
+        }
       }
     }
   }

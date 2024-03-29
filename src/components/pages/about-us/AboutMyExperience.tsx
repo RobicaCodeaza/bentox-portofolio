@@ -1,7 +1,7 @@
-"use client";
-import { motion } from "framer-motion";
-import { Import } from "iconsax-react";
-import MyExperienceItem from "./MyExperienceItem";
+'use client';
+import { motion } from 'framer-motion';
+import { Import } from 'iconsax-react';
+import MyExperienceItem from './MyExperienceItem';
 
 const AboutMyExperience = () => {
   return (
@@ -10,36 +10,36 @@ const AboutMyExperience = () => {
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.9 }}
-      className="about-card my-experience p-32px"
+      className='about-card my-experience p-32px'
     >
-      <div className="d-flex align-items-center justify-content-between">
-        {" "}
-        <p className="heading-4">My Experience</p>
-        <div className="download-icon">
+      <div className='d-flex align-items-center justify-content-between'>
+        {' '}
+        <p className='heading-4'>My Experience</p>
+        <div className='download-icon'>
           <Import />
         </div>
       </div>
 
-      <div className="my-experience__content">
+      <div className='my-experience__content'>
         <MyExperienceItem
-          time="2021 // Now"
-          title="UI Designer"
-          company="Apple"
+          time='2024 -- Now'
+          title='Student and freelancing'
+          company='ASE'
         />
         <MyExperienceItem
-          time="2015 // 2020"
-          title="Front-end Dev"
-          company="Google"
+          time='2020 -- 2024'
+          title='HR'
+          company='Microsoft Learning Students Ambassador'
         />
         <MyExperienceItem
-          time="2010 // 2015"
-          title="UI/UX Designer"
-          company="Intel"
+          time='04.2023 -- 05.2023'
+          title='Apprenticeship(Web Development)'
+          company='Conttax'
         />
         <MyExperienceItem
-          time="2009 // 2010"
-          title="UI Designer"
-          company="Intel"
+          time='04.2022 -- 07.2022 '
+          title='Substitute Teacher'
+          company="CodeSchool's Club"
         />
       </div>
     </motion.div>

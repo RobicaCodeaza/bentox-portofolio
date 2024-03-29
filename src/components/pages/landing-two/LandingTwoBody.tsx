@@ -1,7 +1,7 @@
 'use client';
 import CardMotionOne from '@/components/framer-motion/CardMotionOne';
 import { Blogger, Instagram } from 'iconsax-react';
-import { LogoLinkedin } from 'react-ionicons';
+import { LogoLinkedin, LogoGithub } from 'react-ionicons';
 import ProfileIcon from '../landing-one/ProfileIcon';
 import AllProjectsTwo from './AllProjectsTwo';
 import ExperienceCardItemLandingTwo from './ExperienceCardItemLandingTwo';
@@ -54,14 +54,17 @@ const LandingTwoBody = () => {
                   <div className='profile profile-icons card-style-two p-32px'>
                     {/* <ProfileIcon icon={<Dribbble size='40' />} socialLink='/' /> */}
 
-                    <ProfileIcon icon={<Blogger size='40' />} socialLink='/' />
                     <ProfileIcon
                       icon={<Instagram size='40' />}
-                      socialLink='/'
+                      socialLink='https://www.instagram.com/_robeert.t/'
+                    />
+                    <ProfileIcon
+                      icon={<LogoGithub color={'#ffffff'} />}
+                      socialLink='https://github.com/RobicaCodeaza'
                     />
                     <ProfileIcon
                       icon={<LogoLinkedin color={'#ffffff'} />}
-                      socialLink='/'
+                      socialLink='https://www.linkedin.com/in/robert-cristian-stoica-32510b251/'
                     />
                   </div>
                 </div>

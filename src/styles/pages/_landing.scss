@@ -723,6 +723,12 @@
       display: flex;
       gap: 0.5rem;
       align-items: center;
+      justify-content: center;
+      width: 10rem;
+
+      @media (max-width: 768px) {
+        width: 8rem;
+      }
     }
 
     &__box {
@@ -733,14 +739,10 @@
       transition: all 0.3s ease-in-out;
       color: var(--white-neutral3);
       margin: 0 8px;
-      width: 10rem;
-      display: flex;
-      justify-content: center;
+      // display: flex;
       @media (max-width: 768px) {
         padding: 3.5px 7px;
-        width: 8rem;
       }
-
       &--active {
         border: 1px solid var(--white-neutral2);
         &:hover {

@@ -655,11 +655,17 @@
       padding-bottom: 24px;
       padding-right: 20px;
       padding-left: 24px;
+
+      @media (max-width: 768px) {
+        //For the VS code logo
+        display: none !important;
+      }
+
       @media (max-width: 576px) {
         grid-column-start: 1;
         grid-column-end: 9;
         // Added for the VS CODE LOGO
-        display: none;
+        // display: none;
       }
       .shape {
         position: absolute;
