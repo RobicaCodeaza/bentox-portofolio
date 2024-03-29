@@ -9,12 +9,7 @@ const ContactRight = () => {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const array = Array.from(form?.current);
 
-    array.forEach((element: any) => {
-      console.log(element?.id);
-    });
-    console.log('current');
     emailjs
       // create a account in https://www.emailjs.com/
       // follow there documentation get "YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID",  "YOUR_PUBLIC_KEY"
