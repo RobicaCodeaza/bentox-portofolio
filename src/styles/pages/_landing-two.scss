@@ -610,10 +610,10 @@
     .get-in-touch {
       grid-column-start: 3;
       grid-column-end: 9;
-      @media (max-width: 1400px) {
-        grid-column-start: 4;
-        grid-column-end: 7;
-      }
+      // @media (max-width: 1400px) {
+      //   grid-column-start: 4;
+      //   grid-column-end: 7;
+      // }
 
       position: relative;
       display: flex;
@@ -639,6 +639,7 @@
     }
 
     .blogs {
+      //Currently Having the VS code logo that replaces the Blogs Card
       grid-column-start: 1;
       grid-column-end: 3;
 
@@ -657,6 +658,8 @@
       @media (max-width: 576px) {
         grid-column-start: 1;
         grid-column-end: 9;
+        // Added for the VS CODE LOGO
+        display: none;
       }
       .shape {
         position: absolute;

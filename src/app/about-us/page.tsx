@@ -3,7 +3,7 @@ import AboutUsBody from '@/components/pages/about-us/AboutUsBody';
 import EllipseShapeLandingTwoBottomRight from '@/components/pages/landing-two/EllipseShapeLandingTwoBottomRight';
 import Navbar from '@/components/shared/Navbar';
 import { Metadata } from 'next';
-import aboutOne from '@/../public/image/about-1.png';
+import aboutOne from '@/../public/image/contact-pic.jpg';
 
 export const metadata: Metadata = {
   title: 'About Us - Grid System Unique Portfolio NextJs Template',

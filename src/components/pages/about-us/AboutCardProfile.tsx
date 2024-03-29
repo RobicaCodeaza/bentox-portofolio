@@ -1,7 +1,6 @@
-"use client";
-import imageShape from "@/../public/image/landing-two-profile-shapepng.png";
-import { motion } from "framer-motion";
-import Image, { StaticImageData } from "next/image";
+'use client';
+import { motion } from 'framer-motion';
+import Image, { StaticImageData } from 'next/image';
 
 const AboutCardProfile = ({ image }: { image: StaticImageData }) => {
   return (
@@ -10,22 +9,16 @@ const AboutCardProfile = ({ image }: { image: StaticImageData }) => {
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.9 }}
-      className="about-card card-profile-image"
+      className='about-card card-profile-image'
     >
-      <div className="card-profile-image__image-container">
+      <div className='card-profile-image__image-container'>
         <Image
           src={image}
           width={260}
           height={260}
-          alt="Landing bio image"
-          className="profile-image"
-        />
-        <Image
-          src={imageShape}
-          width={272}
-          height={272}
-          alt="Image Shape"
-          className="profile-shape"
+          style={{ objectFit: 'cover' }}
+          alt='Landing bio image'
+          className='profile-image'
         />
       </div>
     </motion.div>

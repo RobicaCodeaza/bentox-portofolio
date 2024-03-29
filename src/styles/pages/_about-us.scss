@@ -155,16 +155,20 @@
 
     .my-experience {
       grid-column-start: 1;
-      grid-column-end: 5;
+      grid-column-end: 6;
       @media (max-width: 1400px) {
-        grid-column-start: 1;
-        grid-column-end: 9;
+        // grid-column-start: 1;
+        // grid-column-end: 9;
       }
-
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         grid-column-start: 1;
         grid-column-end: 13;
       }
+
+      // @media (max-width: 768px) {
+      //   grid-column-start: 1;
+      //   grid-column-end: 13;
+      // }
 
       &__content {
         margin-top: 40px;
@@ -218,17 +222,21 @@
 
     .what-i-do {
       position: relative;
-      grid-column-start: 5;
-      grid-column-end: 8;
+      grid-column-start: 6;
+      grid-column-end: 10;
 
       @media (max-width: 1400px) {
-        grid-column-start: 9;
-        grid-column-end: 13;
+        // grid-column-start: 9;
+        // grid-column-end: 13;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         grid-column-start: 1;
-        grid-column-end: 13;
+        grid-column-end: 8;
+      }
+      @media (max-width: 576px) {
+        grid-column-start: 1;
+        grid-column-end: -1;
       }
 
       &__content {
@@ -369,21 +377,21 @@
 }
 
 .about-profile {
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-start: 10;
+  grid-column-end: -1;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   @media (max-width: 1400px) {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    // grid-column-start: 1;
+    // grid-column-end: 4;
   }
 
   @media (max-width: 992px) {
-    grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-start: 8;
+    grid-column-end: -1;
   }
 
   @media (max-width: 576px) {
@@ -404,8 +412,8 @@
 }
 
 .about-education {
-  grid-column-start: 4;
-  grid-column-end: 10;
+  grid-column-start: 1;
+  grid-column-end: 9;
   position: relative;
 
   display: flex;
@@ -413,12 +421,13 @@
   justify-content: space-between;
 
   @media (max-width: 1400px) {
-    grid-column-start: 4;
-    grid-column-end: 13;
+    grid-column-start: 1;
+    grid-column-end: 9;
   }
 
   @media (max-width: 992px) {
     grid-column-start: 1;
+    grid-column-end: -1;
     grid-row-start: 1;
   }
 
@@ -478,20 +487,20 @@
 }
 
 .about-get-in-touch {
-  grid-column-start: 10;
+  grid-column-start: 9;
   grid-column-end: 13;
   display: flex;
   flex-direction: column;
   gap: 109px;
   justify-content: space-between;
   @media (max-width: 1400px) {
-    grid-column-start: 1;
+    grid-column-start: 9;
     grid-column-end: 13;
     gap: 40px;
   }
 
   @media (max-width: 992px) {
-    grid-column-start: 7;
+    grid-column-start: 1;
     grid-column-end: 13;
   }
 
