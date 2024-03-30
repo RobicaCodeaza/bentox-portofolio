@@ -17,6 +17,7 @@ import {
   ExpandOutline,
   CogOutline,
 } from 'react-ionicons';
+import { useEffect, useRef } from 'react';
 
 interface SliderItem {
   icon: any; // Assuming IconType is the desired type for icon
@@ -27,6 +28,7 @@ interface SliderItem {
 const ProjectBanner = ({
   sliderTwo,
   bannerImage,
+  bannerImageBlur,
   projectNumber,
   bannerTitle,
   bannerText,
@@ -34,11 +36,40 @@ const ProjectBanner = ({
 }: {
   sliderTwo: any;
   bannerImage: StaticImageData;
+  bannerImageBlur: StaticImageData;
   projectNumber: number;
   bannerTitle: string;
   bannerText: string;
   websiteLink: string;
 }) => {
+  const ref = useRef();
+  useEffect(
+    function () {
+      function loadImg(entries: any, observer: any) {
+        const [entry] = entries;
+        if (!entry.isIntersecting) return;
+        entry.target.srcset = bannerImage.src;
+        entry.target.addEventListener('load', function () {
+          entry.target.classList.remove('lazy-img');
+        });
+        observer.unobserve(entry.target);
+      }
+
+      const imgObserver = new IntersectionObserver(loadImg, {
+        root: null,
+        threshold: 0,
+        rootMargin: '-250px',
+      });
+      imgObserver.observe(ref?.current);
+
+      return () => {
+        if (ref.current) imgObserver.unobserve(ref.current);
+      };
+    },
+
+    [ref]
+  );
+
   return (
     <div className='project-details__banner'>
       {/* <Image
@@ -57,7 +88,8 @@ const ProjectBanner = ({
         className='image-body'
       >
         <Image
-          src={bannerImage}
+          ref={ref}
+          src={bannerImageBlur}
           style={{
             objectFit: 'cover',
             // objectPosition: objectPosition || 'center',
@@ -66,7 +98,7 @@ const ProjectBanner = ({
             width: `${960}px`,
           }}
           alt={`Photo 1 of project ${projectNumber}`}
-          className='image-body__image img-fluid'
+          className='image-body__image img-fluid lazy-img'
         />
         <Link
           href={websiteLink}

@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
+import { useEffect, useRef } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 type Props = {
   image: StaticImageData;
@@ -14,6 +16,7 @@ type Props = {
   text?: string;
   projectNumber?: number;
   objectPosition: string;
+  imageBlurSrc: StaticImageData;
 };
 
 const allProjects: any = {
@@ -56,8 +59,38 @@ const AllProjectImage = ({
   text,
   projectNumber = 0,
   objectPosition,
+  imageBlurSrc,
 }: Props) => {
   const { setCurrentProject } = useProjectContext();
+
+  const ref = useRef();
+  useEffect(
+    function () {
+      function loadImg(entries: any, observer: any) {
+        const [entry] = entries;
+        if (!entry.isIntersecting) return;
+        entry.target.srcset = image.src;
+        entry.target.addEventListener('load', function () {
+          entry.target.classList.remove('lazy-img');
+        });
+        observer.unobserve(entry.target);
+      }
+
+      const imgObserver = new IntersectionObserver(loadImg, {
+        root: null,
+        threshold: 0,
+        rootMargin: '-250px',
+      });
+      imgObserver.observe(ref?.current);
+
+      return () => {
+        if (ref.current) imgObserver.unobserve(ref.current);
+      };
+    },
+
+    [ref]
+  );
+
   return (
     <motion.div
       initial={{ borderRadius: 20, opacity: 0, y: -50, scale: 0.5 }}
@@ -67,7 +100,8 @@ const AllProjectImage = ({
       className='image-body'
     >
       <Image
-        src={image}
+        ref={ref}
+        src={imageBlurSrc}
         style={{
           objectFit: 'cover',
           objectPosition: objectPosition || 'center',
@@ -76,7 +110,7 @@ const AllProjectImage = ({
           width: `${width}px`,
         }}
         alt='All Projects image 11'
-        className='image-body__image img-fluid'
+        className='image-body__image img-fluid lazy-img'
       />
       <Link
         href={`/project-details`}

@@ -25,10 +25,15 @@ import ProjectDetailsItem from './ProjectDetailsItem';
 import defaultBannerImage from '@/../public/image/project-details-banner.png';
 // import bannerImageDefault from '@/../public/image/project-details-banner.png';
 import bannerImage1 from '@/../public/image/bannerImage1.png';
+import bannerImage1Blur from '@/../public/image/bannerImage1blur.jpg';
 import bannerImage2 from '@/../public/image/bannerImage2.png';
+import bannerImage2Blur from '@/../public/image/bannerImage2blur.jpg';
 import bannerImage3 from '@/../public/image/bannerImage3.png';
+import bannerImage3Blur from '@/../public/image/bannerImage3blur.jpg';
 import bannerImage4 from '@/../public/image/bannerImage4.png';
+import bannerImage4Blur from '@/../public/image/bannerImage4blur.jpg';
 import bannerImage5 from '@/../public/image/bannerImage5.png';
+import bannerImage5Blur from '@/../public/image/bannerImage5Blur.jpg';
 // import bannerImage6 from '@/../public/image/bannerImage1.png';
 import image11 from '@/../public/image/image11.png';
 import image12 from '@/../public/image/image12.png';
@@ -39,6 +44,7 @@ const projectsContent = [
   {
     banner: {
       bannerImage: bannerImage1,
+      bannerImageBlur: bannerImage1Blur,
       website: 'https://robicacodeaza-realproperty.netlify.app/',
       bannerTitle: 'RealProperty',
       bannerText: 'An inspiring landing page for a real estate agency.',
@@ -116,6 +122,7 @@ const projectsContent = [
   {
     banner: {
       bannerImage: bannerImage2,
+      bannerImageBlur: bannerImage2Blur,
       website: 'https://robicacodeaza-dailymeals.netlify.app',
       bannerTitle: 'Mealsify',
       bannerText:
@@ -198,6 +205,7 @@ const projectsContent = [
   {
     banner: {
       bannerImage: bannerImage3,
+      bannerImageBlur: bannerImage3Blur,
       website: 'https://dark-omnifood.netlify.app',
       bannerTitle: 'Omnifood',
       bannerText:
@@ -274,6 +282,7 @@ const projectsContent = [
   {
     banner: {
       bannerImage: bannerImage4,
+      bannerImageBlur: bannerImage4Blur,
       website: 'https://robicacodeaza-wellspring-life.netlify.app',
       bannerTitle: 'WellspringLife',
       bannerText:
@@ -369,6 +378,7 @@ const projectsContent = [
   {
     banner: {
       bannerImage: bannerImage5,
+      bannerImageBlur: bannerImage5Blur,
       website: 'https://robicacodeaza-active-healthy.netlify.app',
       bannerTitle: 'Active&Healthy',
       bannerText:
@@ -524,6 +534,10 @@ const ProjectDetailsBody = () => {
           sliderTwo={projectsContent[currentProject]?.banner?.techUsed}
           bannerImage={
             projectsContent[currentProject]?.banner?.bannerImage ||
+            defaultBannerImage
+          }
+          bannerImageBlur={
+            projectsContent[currentProject]?.banner?.bannerImageBlur ||
             defaultBannerImage
           }
           bannerTitle={

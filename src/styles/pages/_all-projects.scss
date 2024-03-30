@@ -84,6 +84,7 @@
         }
       }
     }
+
     &.active {
       display: flex;
       margin-left: auto;
@@ -231,4 +232,7 @@
       }
     }
   }
+}
+.lazy-img {
+  filter: blur(20px);
 }
