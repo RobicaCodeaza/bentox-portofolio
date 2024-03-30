@@ -462,6 +462,7 @@ const projectsContent = [
   {
     banner: {
       bannerImage: bannerImage1,
+      banerImageBlur: bannerImage1Blur,
       bannerTitle: 'Active&Healthy',
       bannerText:
         'An app that helps you log your current cardio activities related to different places you visit.',

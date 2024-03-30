@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 
 const AllProjectsTwo = () => {
-  const ref = useRef();
+  const ref = useRef(null);
   useEffect(
     function () {
       function loadImg(entries: any, observer: any) {
@@ -25,7 +25,7 @@ const AllProjectsTwo = () => {
         threshold: 0,
         rootMargin: '-250px',
       });
-      imgObserver.observe(ref?.current);
+      if (ref.current) imgObserver.observe(ref?.current);
 
       return () => {
         if (ref.current) imgObserver.unobserve(ref.current);

@@ -4,9 +4,7 @@ import { useProjectContext } from '@/components/shared/ProjectProvider';
 import { motion } from 'framer-motion';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
 import { useEffect, useRef } from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 type Props = {
   image: StaticImageData;
@@ -63,7 +61,7 @@ const AllProjectImage = ({
 }: Props) => {
   const { setCurrentProject } = useProjectContext();
 
-  const ref = useRef();
+  const ref = useRef(null);
   useEffect(
     function () {
       function loadImg(entries: any, observer: any) {
@@ -81,7 +79,8 @@ const AllProjectImage = ({
         threshold: 0,
         rootMargin: '-250px',
       });
-      imgObserver.observe(ref?.current);
+
+      if (ref.current) imgObserver.observe(ref.current);
 
       return () => {
         if (ref.current) imgObserver.unobserve(ref.current);

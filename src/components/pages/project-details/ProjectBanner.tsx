@@ -42,7 +42,7 @@ const ProjectBanner = ({
   bannerText: string;
   websiteLink: string;
 }) => {
-  const ref = useRef();
+  const ref = useRef(null);
   useEffect(
     function () {
       function loadImg(entries: any, observer: any) {
@@ -60,7 +60,7 @@ const ProjectBanner = ({
         threshold: 0,
         rootMargin: '-250px',
       });
-      imgObserver.observe(ref?.current);
+      if (ref.current) imgObserver.observe(ref?.current);
 
       return () => {
         if (ref.current) imgObserver.unobserve(ref.current);
