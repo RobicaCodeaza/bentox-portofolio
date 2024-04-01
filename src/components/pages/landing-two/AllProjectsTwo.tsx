@@ -23,7 +23,7 @@ const AllProjectsTwo = () => {
       const imgObserver = new IntersectionObserver(loadImg, {
         root: null,
         threshold: 0,
-        rootMargin: '+100px',
+        rootMargin: '+250px',
       });
       if (ref.current) imgObserver.observe(ref?.current);
 
