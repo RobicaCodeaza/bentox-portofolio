@@ -77,7 +77,7 @@ const AllProjectImage = ({
       const imgObserver = new IntersectionObserver(loadImg, {
         root: null,
         threshold: 0,
-        rootMargin: '-250px',
+        rootMargin: '+250px',
       });
 
       if (ref.current) imgObserver.observe(ref.current);
