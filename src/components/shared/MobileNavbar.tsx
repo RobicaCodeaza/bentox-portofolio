@@ -32,12 +32,12 @@ const navbarData = [
     icon: <Briefcase />,
     path: '/all-projects',
   },
-  {
-    id: 'services-section',
-    menuTitle: 'Services',
-    icon: <Briefcase />,
-    path: '/services',
-  },
+  // {
+  //   id: 'services-section',
+  //   menuTitle: 'Services',
+  //   icon: <Briefcase />,
+  //   path: '/services',
+  // },
 
   {
     id: 'about-page',

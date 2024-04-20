@@ -15,9 +15,9 @@ const AboutMyExperience = () => {
       <div className='d-flex align-items-center justify-content-between'>
         {' '}
         <p className='heading-4'>My Experience</p>
-        <div className='download-icon'>
+        <a download href='/Stoica_Robert_CV.pdf' className='download-icon'>
           <Import />
-        </div>
+        </a>
       </div>
 
       <div className='my-experience__content'>
