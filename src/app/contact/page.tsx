@@ -2,12 +2,6 @@ import AboutTopLeftElement from '@/components/pages/about-us/AboutTopLeftElement
 import ContactBody from '@/components/pages/contact/ContactBody';
 import ServiceBottomRight from '@/components/pages/service/AboutTopLeftElement';
 import Navbar from '@/components/shared/Navbar';
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Contact - Grid System Unique Portfolio NextJs Template',
-  description: 'NextJs Template',
-};
 
 const Contact = () => {
   return (

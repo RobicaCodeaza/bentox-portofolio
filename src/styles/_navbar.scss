@@ -13,6 +13,12 @@
     top: 0;
     margin-top: 40px;
   }
+  @media (max-width: 900px) {
+    margin-top: 20px;
+  }
+  @media (max-width: 600px) {
+    margin-top: 10px;
+  }
 }
 
 .desktop-navbar-container {

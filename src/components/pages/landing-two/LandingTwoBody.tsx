@@ -17,7 +17,7 @@ import { createContext } from 'react';
 
 const LandingTwoBody = () => {
   return (
-    <div className='mt-xxl-10 mt-xl-8 mt-6 position-relative z-2 mb-6 mb-xxl-10 mb-xl-8'>
+    <div className='md:mt-xxl-10 mt-xl-8 mt-6 position-relative z-2 mb-6 mb-xxl-10 mb-xl-8'>
       <div className='landing-two-body mb-40-optional'>
         <div className='landing-two-body__1st'>
           <ProductDesign />

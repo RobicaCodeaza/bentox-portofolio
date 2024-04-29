@@ -1,6 +1,6 @@
 /* LoaderContainer.module.css */
 .loader-container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: relative;
 }
@@ -14,12 +14,13 @@
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
   position: absolute;
-  top: calc(50% - 120px);
-  left: calc(50% - 120px);
+  top: calc(50% - 60px);
+  left: calc(50% - 60px);
+  transform: translate(-500px, 0);
 }
 
 .loader::after {
-  content: "";
+  content: '';
   box-sizing: border-box;
   position: absolute;
   left: 0;
