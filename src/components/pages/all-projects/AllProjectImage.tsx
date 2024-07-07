@@ -111,31 +111,35 @@ const AllProjectImage = ({
         alt='All Projects image 11'
         className='image-body__image img-fluid lazy-img'
       />
-      <Link
-        href={`/project-details`}
-        className='all-project-link'
-        onClick={() => {
-          setCurrentProject(projectNumber);
-        }}
-      >
-        <span className='all-project-link__text-area'>
-          <span className='link-title heading-2'>
-            {allProjects[`project${projectNumber}`]?.title}
+      {projectNumber ? (
+        <Link
+          href={`/project-details`}
+          className='all-project-link'
+          onClick={() => {
+            if (projectNumber) setCurrentProject(projectNumber);
+          }}
+        >
+          <span className='all-project-link__text-area'>
+            <span className='link-title heading-2'>
+              {allProjects[`project${projectNumber}`]?.title}
+            </span>
+            <span className='textL link-text'>
+              {allProjects[`project${projectNumber}`]?.description}
+            </span>
           </span>
-          <span className='textL link-text'>
-            {allProjects[`project${projectNumber}`]?.description}
+          <span className='all-project-link__image'>
+            <Image
+              src={linkImage}
+              width={175}
+              height={100}
+              alt='All Project Link image'
+              className='img-fluid'
+            />
           </span>
-        </span>
-        <span className='all-project-link__image'>
-          <Image
-            src={linkImage}
-            width={175}
-            height={100}
-            alt='All Project Link image'
-            className='img-fluid'
-          />
-        </span>
-      </Link>
+        </Link>
+      ) : (
+        ''
+      )}
     </motion.div>
   );
 };

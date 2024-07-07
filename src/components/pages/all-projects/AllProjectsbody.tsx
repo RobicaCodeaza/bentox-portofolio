@@ -72,14 +72,17 @@ const AllProjectBody = () => {
               projectNumber={5}
             />
           </div>
-          <div className='all-project__3rd-row-2nd-column'>
+          <div
+            className='all-project__3rd-row-2nd-column'
+            // style={{ cursor: 'none' }}
+          >
             <AllProjectImage
               image={image32}
               imageBlurSrc={image32Blur}
               width={636}
               hight={393}
               objectPosition=''
-              projectNumber={6}
+              // projectNumber={6}
             />
           </div>
         </div>
