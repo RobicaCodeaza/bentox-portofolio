@@ -19,8 +19,9 @@ type Props = {
 
 const allProjects: any = {
   project1: {
-    title: 'RealProperty',
-    description: 'An inspiring landing page for a real estate agency.',
+    title: 'WellspringLife',
+    description:
+      'An app that serves its purpose in facilitating a good management of current properties(hotel chain).',
   },
   project2: {
     title: 'DailyMeals',
@@ -28,9 +29,8 @@ const allProjects: any = {
       'An overall app that provides analytics to your daily meals and activities.',
   },
   project3: {
-    title: 'Omnifood',
-    description:
-      'The importance of healthy delivered meals on one landing page.',
+    title: 'MemoCards',
+    description: 'The importance of revision in grid type exams.',
   },
   project4: {
     title: 'WellspringLife',

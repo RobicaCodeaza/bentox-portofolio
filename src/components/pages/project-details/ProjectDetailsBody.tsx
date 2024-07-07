@@ -6,7 +6,13 @@ import {
   IconBrandVite,
   IconBrandRedux,
 } from '@tabler/icons-react';
-import { SiReactquery, SiSupabase, SiVite } from 'react-icons/si';
+import {
+  SiReactquery,
+  SiSupabase,
+  SiVite,
+  SiTypescript,
+  SiReacthookform,
+} from 'react-icons/si';
 
 import { JavaScript, Html5, Designtools } from 'iconsax-react';
 import {
@@ -24,7 +30,7 @@ import ProjectDetailsItem from './ProjectDetailsItem';
 
 import defaultBannerImage from '@/../public/image/project-details-banner.png';
 // import bannerImageDefault from '@/../public/image/project-details-banner.png';
-import bannerImage1 from '@/../public/image/bannerImage1.png';
+import bannerImage1 from '@/../public/image/bannerImage1.jpg';
 import bannerImage1Blur from '@/../public/image/bannerImage1blur.jpg';
 import bannerImage2 from '@/../public/image/bannerImage2.png';
 import bannerImage2Blur from '@/../public/image/bannerImage2blur.jpg';
@@ -44,247 +50,9 @@ const projectsContent = [
   {},
   {
     banner: {
-      bannerImage: bannerImage1,
-      bannerImageBlur: bannerImage1Blur,
-      website: 'https://robicacodeaza-realproperty.netlify.app/',
-      bannerTitle: 'RealProperty',
-      bannerText: 'An inspiring landing page for a real estate agency.',
-      techUsed: [
-        {
-          icon: <Html5 size='32' />,
-          name: 'Html5',
-        },
-
-        {
-          icon: (
-            <LogoSass
-              style={{ width: '32px', height: '32px' }}
-              color='#b3b6b9'
-            />
-          ),
-          name: 'SCSS',
-        },
-        {
-          icon: <JavaScript size='32' />,
-          name: 'JavaScript',
-        },
-        {
-          icon: <Designtools size='32' />,
-          name: 'Art Direction',
-        },
-        {
-          icon: <CogOutline style={{ width: '32px', height: '32px' }} />,
-          name: 'Optimization',
-        },
-        {
-          icon: (
-            <ExpandOutline
-              style={{ width: '32px', height: '32px' }}
-              color='#9747ff'
-            />
-          ),
-          name: 'Responsive',
-        },
-      ],
-    },
-    content: [
-      {
-        image: image11,
-        title: 'The Challenge(user story)',
-        listContent: [
-          'Listing the company main features.',
-          'Hightlight the performance of the realtors.',
-          'Capture the attention of the public and inspire confidence in the services offered.',
-        ],
-        text: 'Creating a minimalistic and professional landing page that attracts visitors and creates an aura of trust.',
-      },
-      {
-        image: image12,
-        title: 'The Solution',
-        listContent: [
-          'Features Section & Testimonials',
-          'Contact Page & gallery',
-          'Current Offer',
-        ],
-        text: 'Splitting the page into main ideas that convince the viewer/potential client.',
-      },
-      {
-        image: image13,
-        title: 'Project Result',
-        text: 'A well optimized landing page that follows some of the principles/directions:',
-        listContent: [
-          'Art Direction,Density Switching & Image Optimization',
-          'Personality: Serious & Simple',
-          'Parcel bundling and optimizing',
-        ],
-      },
-    ],
-  },
-  {
-    banner: {
-      bannerImage: bannerImage2,
-      bannerImageBlur: bannerImage2Blur,
-      website: 'https://robicacodeaza-dailymeals.netlify.app',
-      bannerTitle: 'Mealsify',
-      bannerText:
-        'An overall app that provides analytics to your daily meals and activities.',
-      techUsed: [
-        {
-          icon: <Html5 size='32' />,
-          name: 'Html5',
-        },
-
-        {
-          icon: (
-            <LogoSass
-              style={{ width: '32px', height: '32px' }}
-              color='#b3b6b9'
-            />
-          ),
-          name: 'SCSS',
-        },
-        {
-          icon: <JavaScript size='32' />,
-          name: 'JavaScript',
-        },
-        {
-          icon: <Designtools size='32' />,
-          name: 'Art Direction',
-        },
-        {
-          icon: <CogOutline style={{ width: '32px', height: '32px' }} />,
-          name: 'Optimization',
-        },
-        {
-          icon: (
-            <ExpandOutline
-              style={{ width: '32px', height: '32px' }}
-              color='#9747ff'
-            />
-          ),
-          name: 'Responsive',
-        },
-      ],
-    },
-
-    content: [
-      {
-        image: image11,
-        title: 'The Challenge(user story)',
-        listContent: [
-          'View in detail the nutrients',
-          'View the body stats progression',
-          'Track Calories,daily stats and compare',
-          'The feature that permits to add your own recipes',
-        ],
-        text: 'Creating a responsive experience for users that want to track their daily activity and calories.',
-      },
-      {
-        image: image12,
-        title: 'The Solution',
-        listContent: [
-          'The ability to add meals to different part of day + edit servings and store everything for the calendar day',
-          'Calculator of necessary calories based on activity',
-          'The ability to view stats from other days of calendar in full details',
-          'Progression chart and general statistics.',
-        ],
-        text: 'The possibility of having access to a large meals database(you can share the meals via url) connected with the dashboard for easier usage through one application.',
-      },
-      {
-        image: image13,
-        title: 'Project Result',
-        listContent: [
-          'MVC pattern',
-          'Quickchart-js & Datedreamer used for charts and calendar',
-          'Spoonacular Api for meals',
-          'Parcel with Transpiling & Polifilling',
-        ],
-        text: 'A responsive application that integrates one large meals database and creates charts.',
-      },
-    ],
-  },
-  {
-    banner: {
-      bannerImage: bannerImage3,
-      bannerImageBlur: bannerImage3Blur,
-      website: 'https://dark-omnifood.netlify.app',
-      bannerTitle: 'Omnifood',
-      bannerText:
-        'The importance of healthy delivered meals on one landing page.',
-      techUsed: [
-        {
-          icon: <Html5 size='32' />,
-          name: 'Html5',
-        },
-
-        {
-          icon: (
-            <LogoCss3
-              style={{ width: '32px', height: '32px' }}
-              color='#b3b6b9'
-            />
-          ),
-          name: 'CSS',
-        },
-        {
-          icon: <JavaScript size='32' />,
-          name: 'JavaScript',
-        },
-        {
-          icon: <Designtools size='32' />,
-          name: 'Art Direction',
-        },
-        {
-          icon: <CogOutline style={{ width: '32px', height: '32px' }} />,
-          name: 'Optimization',
-        },
-        {
-          icon: (
-            <ExpandOutline
-              style={{ width: '32px', height: '32px' }}
-              color='#9747ff'
-            />
-          ),
-          name: 'Responsive',
-        },
-      ],
-    },
-
-    content: [
-      {
-        image: image11,
-        title: 'The Challenge(user story)',
-        listContent: [
-          'Show the audience how it works',
-          'The broad range of meals',
-          'The offer',
-        ],
-        text: 'Having a website that showcases the advantages of a healthy diet together with the advantages of home delivered meals.',
-      },
-      {
-        image: image12,
-        title: 'The Solution',
-        listContent: [
-          'Hero Section(to get the attention)',
-          'How it works Section',
-          'Testimonials and Prices',
-          'Features section',
-          'CTA section',
-        ],
-        text: 'A modern feel page that puts emphasis on the healthy aspect,having the final purpose to redirect users to the CTA(call to action) section.',
-      },
-      {
-        image: image13,
-        title: 'Project Result',
-        text: 'A final page that shines on all devices and takes into consideration the art direction and resolution switching.',
-      },
-    ],
-  },
-  {
-    banner: {
       bannerImage: bannerImage4,
       bannerImageBlur: bannerImage4Blur,
-      website: 'https://robicacodeaza-wellspring-life.netlify.app',
+      website: 'https://robicacodeaza-wellspring-life.vercel.app',
       bannerTitle: 'WellspringLife',
       bannerText:
         'An app that serves its purpose in facilitating a good management of current properties(hotel chain).',
@@ -378,6 +146,261 @@ const projectsContent = [
   },
   {
     banner: {
+      bannerImage: bannerImage2,
+      bannerImageBlur: bannerImage2Blur,
+      website: 'https://robicacodeaza-dailymeals.netlify.app',
+      bannerTitle: 'Mealsify',
+      bannerText:
+        'An overall app that provides analytics to your daily meals and activities.',
+      techUsed: [
+        {
+          icon: <Html5 size='32' />,
+          name: 'Html5',
+        },
+
+        {
+          icon: (
+            <LogoSass
+              style={{ width: '32px', height: '32px' }}
+              color='#b3b6b9'
+            />
+          ),
+          name: 'SCSS',
+        },
+        {
+          icon: <JavaScript size='32' />,
+          name: 'JavaScript',
+        },
+        {
+          icon: <Designtools size='32' />,
+          name: 'Art Direction',
+        },
+        {
+          icon: <CogOutline style={{ width: '32px', height: '32px' }} />,
+          name: 'Optimization',
+        },
+        {
+          icon: (
+            <ExpandOutline
+              style={{ width: '32px', height: '32px' }}
+              color='#9747ff'
+            />
+          ),
+          name: 'Responsive',
+        },
+      ],
+    },
+
+    content: [
+      {
+        image: image11,
+        title: 'The Challenge(user story)',
+        listContent: [
+          'View in detail the nutrients',
+          'View the body stats progression',
+          'Track Calories,daily stats and compare',
+          'The feature that permits to add your own recipes',
+        ],
+        text: 'Creating a responsive experience for users that want to track their daily activity and calories.',
+      },
+      {
+        image: image12,
+        title: 'The Solution',
+        listContent: [
+          'The ability to add meals to different part of day + edit servings and store everything for the calendar day',
+          'Calculator of necessary calories based on activity',
+          'The ability to view stats from other days of calendar in full details',
+          'Progression chart and general statistics.',
+        ],
+        text: 'The possibility of having access to a large meals database(you can share the meals via url) connected with the dashboard for easier usage through one application.',
+      },
+      {
+        image: image13,
+        title: 'Project Result',
+        listContent: [
+          'MVC pattern',
+          'Quickchart-js & Datedreamer used for charts and calendar',
+          'Spoonacular Api for meals',
+          'Parcel with Transpiling & Polifilling',
+        ],
+        text: 'A responsive application that integrates one large meals database and creates charts.',
+      },
+    ],
+  },
+  {
+    banner: {
+      bannerImage: bannerImage3,
+      bannerImageBlur: bannerImage3Blur,
+      website: 'https://memo-cards-psi.vercel.app',
+      bannerTitle: 'MemoCards',
+      bannerText: 'The importance of revision in grid type exams.',
+      techUsed: [
+        {
+          icon: <Html5 size='32' />,
+          name: 'Html5',
+        },
+        {
+          icon: <SiTypescript size='32' />,
+          name: 'TypeScript',
+        },
+
+        {
+          icon: (
+            <LogoReact
+              style={{ width: '32px', height: '32px' }}
+              color='#b3b6b9'
+            />
+          ),
+          name: 'React',
+        },
+        {
+          icon: <SiReactquery size='32'></SiReactquery>,
+          name: 'React Query',
+        },
+        {
+          icon: <IconBrandRedux size='32'></IconBrandRedux>,
+          name: 'Redux',
+        },
+        {
+          icon: <SiReacthookform size='32'></SiReacthookform>,
+          name: 'Hook-Form',
+        },
+        {
+          icon: <SiSupabase size='32'></SiSupabase>,
+          name: 'Supabase',
+        },
+        {
+          icon: (
+            <SiVite size='32' style={{ fill: 'transparent !important;' }} />
+          ),
+          name: 'Vite',
+        },
+        {
+          icon: <Designtools size='32' />,
+          name: 'Art Direction',
+        },
+
+        {
+          icon: (
+            <ExpandOutline
+              style={{ width: '32px', height: '32px' }}
+              color='#9747ff'
+            />
+          ),
+          name: 'Responsive',
+        },
+      ],
+    },
+
+    content: [
+      {
+        image: image11,
+        title: 'The Challenge(user story)',
+        listContent: [
+          'Show the audience how it works',
+          'The broad range of cards based on num answers',
+          'The Stats that show your progression',
+        ],
+        text: 'Having a website that showcases the advantages of a revision planned before exam and structure based of your questions and your self awareness.',
+      },
+      {
+        image: image12,
+        title: 'The Solution',
+        listContent: [
+          'Decks(to store cards)',
+          'Cards(to store questions and answers)',
+          'Quizes(to test everything)',
+          'Perfection Scores Stats',
+          'Revision Plan',
+        ],
+        text: 'A modern app that promotes and ease of use along with the ability to progress and ace your grid type exams.',
+      },
+      {
+        image: image13,
+        title: 'Project Result',
+        text: 'Am optimised application that works well on big screens and also on phones. Tailored for students that track their progress and want to simulate/prepare for the future exams.',
+      },
+    ],
+  },
+  {
+    banner: {
+      bannerImage: bannerImage1,
+      bannerImageBlur: bannerImage1Blur,
+      website: 'https://dark-omnifood.netlify.app',
+      bannerTitle: 'Omnifood',
+      bannerText:
+        'The importance of healthy delivered meals on one landing page.',
+      techUsed: [
+        {
+          icon: <Html5 size='32' />,
+          name: 'Html5',
+        },
+
+        {
+          icon: (
+            <LogoCss3
+              style={{ width: '32px', height: '32px' }}
+              color='#b3b6b9'
+            />
+          ),
+          name: 'CSS',
+        },
+        {
+          icon: <JavaScript size='32' />,
+          name: 'JavaScript',
+        },
+        {
+          icon: <Designtools size='32' />,
+          name: 'Art Direction',
+        },
+        {
+          icon: <CogOutline style={{ width: '32px', height: '32px' }} />,
+          name: 'Optimization',
+        },
+        {
+          icon: (
+            <ExpandOutline
+              style={{ width: '32px', height: '32px' }}
+              color='#9747ff'
+            />
+          ),
+          name: 'Responsive',
+        },
+      ],
+    },
+
+    content: [
+      {
+        image: image11,
+        title: 'The Challenge(user story)',
+        listContent: [
+          'Show the audience how it works',
+          'The broad range of meals',
+          'The offer',
+        ],
+        text: 'Having a website that showcases the advantages of a healthy diet together with the advantages of home delivered meals.',
+      },
+      {
+        image: image12,
+        title: 'The Solution',
+        listContent: [
+          'Hero Section(to get the attention)',
+          'How it works Section',
+          'Testimonials and Prices',
+          'Features section',
+          'CTA section',
+        ],
+        text: 'A modern feel page that puts emphasis on the healthy aspect,having the final purpose to redirect users to the CTA(call to action) section.',
+      },
+      {
+        image: image13,
+        title: 'Project Result',
+        text: 'A final page that shines on all devices and takes into consideration the art direction and resolution switching.',
+      },
+    ],
+  },
+  {
+    banner: {
       bannerImage: bannerImage5,
       bannerImageBlur: bannerImage5Blur,
       website: 'https://robicacodeaza-active-healthy.netlify.app',
@@ -460,70 +483,70 @@ const projectsContent = [
       },
     ],
   },
-  {
-    banner: {
-      bannerImage: bannerImage1,
-      banerImageBlur: bannerImage1Blur,
-      bannerTitle: 'Active&Healthy',
-      bannerText:
-        'An app that helps you log your current cardio activities related to different places you visit.',
-      techUsed: [
-        {
-          icon: <Html5 size='32' />,
-          name: 'Html5',
-        },
+  // {
+  //   banner: {
+  //     bannerImage: bannerImage1,
+  //     banerImageBlur: bannerImage1Blur,
+  //     bannerTitle: 'Active&Healthy',
+  //     bannerText:
+  //       'An app that helps you log your current cardio activities related to different places you visit.',
+  //     techUsed: [
+  //       {
+  //         icon: <Html5 size='32' />,
+  //         name: 'Html5',
+  //       },
 
-        {
-          icon: (
-            <LogoSass
-              style={{ width: '32px', height: '32px' }}
-              color='#b3b6b9'
-            />
-          ),
-          name: 'SCSS',
-        },
-        {
-          icon: <JavaScript size='32' />,
-          name: 'JavaScript',
-        },
-        {
-          icon: <Designtools size='32' />,
-          name: 'Art Direction',
-        },
-        {
-          icon: <CogOutline style={{ width: '32px', height: '32px' }} />,
-          name: 'Optimization',
-        },
-        {
-          icon: (
-            <ExpandOutline
-              style={{ width: '32px', height: '32px' }}
-              color='#9747ff'
-            />
-          ),
-          name: 'Responsive',
-        },
-      ],
-    },
-    content: [
-      {
-        image: image11,
-        title: 'The Challenge',
-        text: 'Explore our portfolio projects and witness the artistry of Aroha Agency. Each endeavor a testament to our commitment, showcasing innovative design, strategic marketing,',
-      },
-      {
-        image: image12,
-        title: 'The Solution',
-        text: 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.',
-      },
-      {
-        image: image13,
+  //       {
+  //         icon: (
+  //           <LogoSass
+  //             style={{ width: '32px', height: '32px' }}
+  //             color='#b3b6b9'
+  //           />
+  //         ),
+  //         name: 'SCSS',
+  //       },
+  //       {
+  //         icon: <JavaScript size='32' />,
+  //         name: 'JavaScript',
+  //       },
+  //       {
+  //         icon: <Designtools size='32' />,
+  //         name: 'Art Direction',
+  //       },
+  //       {
+  //         icon: <CogOutline style={{ width: '32px', height: '32px' }} />,
+  //         name: 'Optimization',
+  //       },
+  //       {
+  //         icon: (
+  //           <ExpandOutline
+  //             style={{ width: '32px', height: '32px' }}
+  //             color='#9747ff'
+  //           />
+  //         ),
+  //         name: 'Responsive',
+  //       },
+  //     ],
+  //   },
+  //   content: [
+  //     {
+  //       image: image11,
+  //       title: 'The Challenge',
+  //       text: 'Explore our portfolio projects and witness the artistry of Aroha Agency. Each endeavor a testament to our commitment, showcasing innovative design, strategic marketing,',
+  //     },
+  //     {
+  //       image: image12,
+  //       title: 'The Solution',
+  //       text: 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.',
+  //     },
+  //     {
+  //       image: image13,
 
-        title: 'Project Result',
-        text: 'Because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, ',
-      },
-    ],
-  },
+  //       title: 'Project Result',
+  //       text: 'Because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, ',
+  //     },
+  //   ],
+  // },
 ];
 
 const ProjectDetailsBody = () => {

@@ -1,13 +1,13 @@
 'use client';
 // import image11 from '@/../public/image/all-project-11.png';
-import image11 from '@/../public/image/all-project-1.png';
+import image11 from '@/../public/image/all-project-1.jpg';
 import image11Blur from '@/../public/image/all-project-1-blur.jpg';
 // import image12 from '@/../public/image/all-project-12.png';
 import image12 from '@/../public/image/all-project-2.png';
 import image12Blur from '@/../public/image/all-project-2-blur.jpg';
-import image13 from '@/../public/image/all-project-3.png';
+import image13 from '@/../public/image/all-project-3.jpg';
 import image13Blur from '@/../public/image/all-project-3-blur.jpg';
-import image21 from '@/../public/image/all-project-4.png';
+import image21 from '@/../public/image/all-project-4.jpg';
 import image21Blur from '@/../public/image/all-project-4-blur.jpg';
 import image31 from '@/../public/image/all-project-5.png';
 import image31Blur from '@/../public/image/all-project-5-blur.jpg';
